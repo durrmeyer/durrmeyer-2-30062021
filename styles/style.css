@@ -4,9 +4,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
- } 
- body{
-     background-color: #f2f2f2;
+}
+    body{
+     background-color: white;
      margin: 20px;
      font-family: 'Raleway', sans-serif;
      color: black;
@@ -30,7 +30,7 @@ h2{
  /*Header*/   
 header{
     
-    background-color: white;
+    background-color:white;
 }
 .logo{
     display: flex;
@@ -76,7 +76,7 @@ header{
 }
 
 
-/*body*/
+
 h1{
     padding-top: 20px;
     font-size: 18px;
@@ -88,22 +88,15 @@ h1{
     
 }
 .fa-map-marker-alt{
-    background-color: #DEEBFF;
+    background-color: #f2f2f2;
     padding: 5px 10px;
     border-radius: 95px 0 0 95px;
-}
-
-.box{
-    margin-top: 15px;
-    position: relative;
-    display: inline-block;
-    font-size: 20px;
-    text-align: center;
-    color: black;
+    height: 30px;
 }
 
 .search{
     padding: 5px 0;
+    border: 1px solid #DEEBFF;
 }
 .submit{
     padding: 5px 25px;
@@ -111,21 +104,38 @@ h1{
     border: none;
     background: blue;
     color: white;
+    width: 112px;
 }
 .filtre{
     display: flex;
     align-items: center;
-    color: black;   
+    color: black; 
+    margin-top: 15px;  
+}
+input{
+    text-align: center;
+    color: black;
+  
 }
 .search-filtre{
     border-radius: 0 95px 95px 0;
-    border: 0.5px solid grey;
-    width: 100px;
+    border: 0.5px solid #DEEBFF;
+    border-left: none;
+    padding: 5px 10px;
+    width: 120px;
+    color: black;
+    height: 30px;
+    text-align: center;
+}
+.box-filtre{
+    padding-left: 12px;   
+}
+.box{
+    display: flex;
+    display: inline-block;  
+    padding-left: 6px;
 }
 
-main{
-    border: 3px solid rgb(161, 73, 77);
-}
 footer{
     border: 3px solid rgb(73, 161, 102);
 }
