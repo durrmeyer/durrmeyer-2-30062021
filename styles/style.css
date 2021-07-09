@@ -1,0 +1,132 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ } 
+ body{
+     background-color: #f2f2f2;
+     margin: 20px;
+     font-family: 'Raleway', sans-serif;
+     color: black;
+ }
+ p{
+    padding-top: 10px;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:focus, a:hover{
+        color: blue;
+}
+h2{
+    font-size: 19px;
+}
+ /*Header*/   
+header{
+    
+    background-color: white;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+/* navigation*/
+.navbar{
+    justify-content: space-between;
+    display: flex;
+}
+.nav{
+    padding-top: 20px;
+    align-items: center;
+    font-size: 12px;
+    display: inline;
+}
+.page-courante{
+    color: blue;
+    border-top: 2px blue solid;
+    padding-top: 12px;
+}
+.connexion{
+    color: #0065FC;
+    font-weight: 700;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+ }
+.nav li{
+    margin-right: 30px;
+   
+    float: left ;
+    justify-content: space-between;
+}
+.nav a{
+    font-size: 1.3em;
+     
+}
+
+
+/*body*/
+h1{
+    padding-top: 20px;
+    font-size: 18px;
+}
+.recherche {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+.fa-map-marker-alt{
+    background-color: #DEEBFF;
+    padding: 5px 10px;
+    border-radius: 95px 0 0 95px;
+}
+
+.box{
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.search{
+    padding: 5px 0;
+}
+.submit{
+    padding: 5px 25px;
+    border-radius: 0 95px 95px 0;
+    border: none;
+    background: blue;
+    color: white;
+}
+.filtre{
+    display: flex;
+    align-items: center;
+    color: black;   
+}
+.search-filtre{
+    border-radius: 0 95px 95px 0;
+    border: 0.5px solid grey;
+    width: 100px;
+}
+
+main{
+    border: 3px solid rgb(161, 73, 77);
+}
+footer{
+    border: 3px solid rgb(73, 161, 102);
+}
+
