@@ -1,10 +1,5 @@
 
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
     body{
      background-color: white;
      margin: 20px;
@@ -13,7 +8,7 @@
  }
  p{
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Raleway', sans-serif;
     
 }
@@ -25,9 +20,13 @@ a:focus, a:hover{
         color: blue;
 }
 h2{
-    font-size: 19px;
-}
- /*Header*/   
+    font-size: 15px;
+    text-align: center;
+    margin-top: -20px;
+} 
+h3{
+    font-size: 10px;
+} 
 header{
     
     background-color:white;
@@ -39,15 +38,15 @@ header{
 }
 /* navigation*/
 .navbar{
-    justify-content: space-between;
-    display: flex;
+       display: flex;
+       justify-content: space-between;
 }
 .nav{
+    display: inline;
     padding-top: 20px;
     align-items: center;
     font-size: 12px;
-    display: inline;
-}
+   }
 .page-courante{
     color: blue;
     border-top: 2px blue solid;
@@ -76,7 +75,7 @@ header{
 }
 
 
-
+/*main */
 h1{
     padding-top: 20px;
     font-size: 18px;
@@ -106,37 +105,154 @@ h1{
     color: white;
     width: 112px;
 }
+
 .filtre{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 12px;
+   }
+
+.box-filtre{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.box{
+    border: solid #f2f2f2;
+    border-radius: 45px 45px 45px 45px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+   }
+.search-filtre{   
+    border: none;
+}
+.fa-money-bill-wave{
     align-items: center;
-    color: black; 
-    margin-top: 15px;  
+    background: #DEEBFF;
+    border-radius: 50% 50%;
+    width: 30px;
+    padding-top: 8px;
+    color: #0065FC;
+    border: 3px solid #DEEBFF;
+}
+.fa-child{
+    align-items: center;
+    background: #DEEBFF;
+    border-radius: 50% 50%;
+    width: 30px;
+    padding-top: 8px;
+    color: #0065FC;
+    border: 3px solid #DEEBFF;
+}
+.fa-dog{
+    align-items: center;
+    background: #DEEBFF;
+    border-radius: 50% 50%;
+    width: 30px;
+    padding-top: 8px;
+    color: #0065FC;
+    border: 3px solid #DEEBFF;
+}
+.fa-heart{
+    align-items: center;
+    background: #DEEBFF;
+    border-radius: 50% 50%;
+    width: 30px;
+    padding-top: 8px;
+    color: #0065FC;
+    border: 3px solid #DEEBFF;
 }
 input{
     text-align: center;
-    color: black;
+    color: black;  
+}
+.info{
+    display: flex;
+    justify-items: left;
+}
+.fa-info{
+    color: #0065FC;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 18px;
+    border-radius: 50%;
+}
+.container, h2{
+    margin-left: 15px;
+}
+.card-img{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.card{
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+    margin: 15px;
+}
+.card, p{
+    text-align: left;
+    padding-top: -15px;
+    font-size: 9px;
+}
+.card, h3, p{
+    margin-left: 12px;
+}
+img{
+   height: 100px;
+   width: 150px; 
+   padding-right: 4px;
+   padding-top: 4px;
+   padding-left: 4px;
   
 }
-.search-filtre{
-    border-radius: 0 95px 95px 0;
-    border: 0.5px solid #DEEBFF;
-    border-left: none;
-    padding: 5px 10px;
-    width: 120px;
-    color: black;
-    height: 30px;
-    text-align: center;
+
+
+.item{
+    background: #f2f2f2;
+    border-radius: 15px;
+    padding-top: 42px;
+    margin-right: 600px;
 }
-.box-filtre{
-    padding-left: 12px;   
+.item, h3{
+    text-align: left;
 }
-.box{
-    display: flex;
-    display: inline-block;  
-    padding-left: 6px;
+.item2{
+    justify-content: flex-end;
+    flex-direction: column;
+    background: aqua;
+    padding-left: 15px;
+    margin-left: 18px;
+    text-align: center
+}
+.item3{
+    margin-top: 50px;
 }
 
+/*footer*/
 footer{
-    border: 3px solid rgb(73, 161, 102);
+    display: flex;
+    margin-top: 50px;
+    background: #f2f2f2;
+   
 }
-
+.card-footer{
+    margin-right: 100px;
+   
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+ 
+    
