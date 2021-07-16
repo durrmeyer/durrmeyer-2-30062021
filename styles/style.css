@@ -158,6 +158,7 @@ input {
    border-radius: 50%;
 }
 /*2 ème partie*/
+/* ITEM 1*/
 .item,
 h2 {
    font-size: 20px;
@@ -179,6 +180,11 @@ p {
 }
 .stars {
    color: #0065fc;
+   font-size: 12px;
+   margin-left: 12px;
+}
+.Icon-starColor{
+   color: #f2f2f2;
 }
 img {
    height: 100px;
@@ -186,6 +192,7 @@ img {
    padding-right: 4px;
    padding-top: 4px;
    padding-left: 4px;
+   border-radius: 17px 17px 0 0;
 }
 .container {
    display: grid;
@@ -196,21 +203,24 @@ img {
    flex-wrap: wrap;
    flex-direction: row;
    background: #f2f2f2;
-   height: 850px;
+   height: 550px;
    width: 800px;
-   border-radius: 15px solid blue;
-}
+   border-radius: 10px;
+   }
 .item, h2{
    margin-left: 20px;
+   margin-right: 20px;
 }
 .bloc-image{
    display: flex;
    flex-wrap: wrap;
    flex-direction: row; 
-   justify-content: center;
    margin-bottom: 400px;
+   justify-content: space-evenly;
+   margin-top: -50px;
 }
 
+/* ITEM 1*/
 .item1 {
    background: #f2f2f2;
 }
