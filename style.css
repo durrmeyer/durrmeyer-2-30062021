@@ -80,11 +80,13 @@ h2{
    overflow: hidden;
    text-align: center;
    padding-right: 12px;
+   height: 40px;
 }
 .fa-map-marker-alt {
    background-color: #f2f2f2;
    padding: 5px 10px;
    border-radius: 95px 0 0 95px;
+   padding-top: 12px;
 }
 .search {
    padding: 5px 0;
@@ -125,9 +127,13 @@ h2 {
    display: flex;
    margin-left: 16px;
    margin-right: 16px;
+
 }
+
 input {
    border: none;
+   font-weight: bold;
+   color: black;
 }
 .box .fas {
    align-items: center;
@@ -168,6 +174,7 @@ input {
 .item,h2 {
    font-size: 20px;
 }
+
 .card {
    background: white;
    border: 2px solid white;
@@ -264,7 +271,7 @@ img {
    height: 120px;
 }
 .item1-icone {
-   display: inline-flex;
+   display: block ruby;
    font-size: 15px;
    margin-left: 12px;
 }
@@ -283,41 +290,10 @@ img {
 }
 /*ITEM 2*/
 #item2 {
-   margin-top: 20px;
    margin-left: 19px;
+   margin-bottom: 20px;
 }
-.item2,h2 {
-   margin-left: 0;
-}
-.container-item {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   margin-left: 20px;
-}
-.activite1 {
-   height: 300px;
-   width: 250px;
-}
-.img-activite {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   padding-bottom: 90px;
-}
-.part-img1 {
-   display: flex;
-   flex-wrap: wrap;
-   float: right;
-}
-.fa-chart-line {
-   font-size: 20px;
-   margin-top: 25px;
-   margin-left: 56px;
-   padding-left: 60px;
-}
-.activite3 {
-   float: right;
-}
+
 /*footer*/
 footer {
    width: 100%;
