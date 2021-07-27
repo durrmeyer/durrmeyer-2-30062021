@@ -1,3 +1,4 @@
+
 body {
    background-color: white;
    margin: 20px;
@@ -106,19 +107,14 @@ h2{
    width: 112px;
 }
 
-.filtre {
-   display: flex;
-   margin-top: 45px;
-}
-
 .content,
 h2 {
    padding-top: 4px;
    font-size: 20px;
 }
-
 .box-filtre {
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
    height: 40px;
    margin-left: 20px;
@@ -130,9 +126,7 @@ h2 {
    overflow: hidden;
    text-align: center;
    display: flex;
-   margin-left: 16px;
    margin-right: 16px;
-
 }
 
 input {
@@ -149,6 +143,9 @@ input {
    padding-top: 10px;
    color: #0065fc;
    padding-top: 8px;
+}
+.box .fas:hover{
+   background-color: gold;
 }
 
 input {
@@ -212,14 +209,13 @@ input {
    color: #f2f2f2;
 }
 img {
- 
    width: 192px;
    height: 100px;
    padding-left: 4px;
    margin-top: 4px;
    border-radius: 17px 17px 0 0;
    object-fit: cover;
-  }
+}
 #container {
    display: grid;
    grid-template-columns: 2fr 1fr;
@@ -316,45 +312,54 @@ img {
    margin-bottom: 20px;
    padding-top: 15px;
 }
+#item2 p{
+   margin-left: 60px;
+   margin-top: -60px;
+}
 .bloc-image-item{
    display: flex;
    flex-wrap: wrap;
    align-self: flex-end;
 }
 .activite1{
-   height: 350px;
+   height: 220px;
+   padding-left: 0;
    margin-bottom: 50px;
+   border: 2px solid #f2f2f2;
+   object-position: left;
 }
 .activite2{
    margin-left: 50px;
    padding-bottom: 42px;
+   padding-left: 0;
+   margin-bottom: 30px;
+   border: 2px solid #f2f2f2;
+   border-radius: 17px 17px 17px 17px;
+   height: 100px;
  }
 .activite3{
    margin-left: 50px;
+   margin-bottom: 50px;
+   padding-left: 0;
+   border: 2px solid #f2f2f2;
+   height: 90px;
+   object-position: center;
+   
 }
 .container-item2{
    display: flex;
-  flex-wrap: wrap;
+   flex-wrap: wrap;
 }
 .section2{
    display: flex;  
    flex-wrap: wrap;
 }
-.card-item2{
-   display: flex;
-   flex-direction: column;
-}
-.card-text2{
-   margin-top: -40px;
-   padding-left: 50px;
-  }
+
+
 .activite3, .activite2, .activite1{
    width: 250px;
    object-fit: cover; 
-}
-.activite3{
-   padding-bottom: 50px;
-   margin-top: 45px;
+   overflow: hidden;
 }
 
 /*footer*/
@@ -368,10 +373,39 @@ footer {
 .card-footer {
    justify-content: space-between;
    width: 100%;
-   max-width: 1440px;
+   padding-left: 40px;
 }
 ul {
    padding: 0;
    list-style-type: none;
    text-align: left;
+}
+
+@media all and (max-width: 1280px)
+
+{
+   .card-item2{
+      margin-left: 50px;
+   }
+   .section2{
+      margin-left: 90px;
+   }
+   .activite2, .activite3{
+      margin-left: 0px;
+   }
+   .bloc-image-item2{
+      margin-left: 50px;
+   }
+  .container2{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+   footer{
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: 90px;
+   margin-right: 90px;
+}
+   
 }
