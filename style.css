@@ -39,17 +39,15 @@ header {
 .navbar {
    display: flex;
    justify-content: space-between;
+   padding-top: 45px;
+   overflow:hidden;
 }
-.nav {
-   display: inline;
-   padding-top: 20px;
-   align-items: center;
-   font-size: 12px;
-}
+
+
 .page-courante {
    color: blue;
    border-top: 2px blue solid;
-   padding-top: 12px;
+   padding-top: 20px;
 }
 .connexion {
    color: #0065fc;
@@ -69,8 +67,14 @@ header {
 }
 .nav a {
    font-size: 1.3em;
+ 
+} 
+@media (max-width: 600px) {
+   
+.connexion{ 
+   padding-left: 100px;
 }
-
+ }   
 /*main */
 h1 {
    padding-top: 20px;
@@ -261,61 +265,65 @@ img {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
+   padding-top: 70px;
 }
 .container-activite{
    padding-top: 20px;
 }
-.activite{
-   margin-top: 50px;
-   padding-right: 3px;
-}
 
 .img1{
-   height: 390px;
-   width: 225px;
+   height: 300px;
+   width: 265px;
    padding-left: 0;
-  /* object-position: 50% 50px;*/
+  
+}
+.img-activite{
+   margin-top: 22px;
 }
 .img2{
    height: 150px;
-   width: 225px;
+   width: 265px;
    padding-left: 0;
 }
 .img3{
     height: 80px;
-    width: 225px;
+    width: 265px;
     padding-left: 0;
+    object-fit: cover;
+   object-position: 100% 20%;
 }
 .img4{
-   width: 225px;
+   width: 265px;
+   height: 100px;
+   object-fit: cover;
+   object-position: top;
 }
 .img5{
-   width: 225px;
+   width: 265px;
+   height: 130px;
    padding-left: 0;
+}
+.activite3{
+   padding-right: 0px;
 }
 .text-activite{
    border: 2px solid #F2F2F2;
-   margin-top: -10px;
+   margin-top: -5px;
    background-color: white;
    border-radius: 0 0 17px 17px;
    padding-left: 5px;
-}
+  }
 
 /*footer*/
 footer {
    width: 100%;
    background: #f2f2f2;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   margin-top: 30px;
 }
-.card-footer {
-   justify-content: space-between;
-   width: 100%;
-   padding-left: 40px;
-}
+
 ul {
    padding: 0;
    list-style-type: none;
    text-align: left;
 }
+
