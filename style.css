@@ -69,12 +69,7 @@ header {
    font-size: 1.3em;
  
 } 
-@media (max-width: 600px) {
-   
-.connexion{ 
-   padding-left: 100px;
-}
- }   
+ 
 /*main */
 h1 {
    padding-top: 20px;
@@ -327,3 +322,31 @@ ul {
    text-align: left;
 }
 
+.card-text-footer{
+   line-height: 2; 
+
+}
+.info-footer{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding-right: 45px;
+   margin-left: 30px;
+}
+.card-footer{
+   margin-right: 45px;
+   padding-right: 50px;
+}
+
+
+@media (max-width: 768px) {
+   .container-hebergement {
+      background: none;
+    
+  }
+  .card-footer{
+     display: flex;
+     flex-direction: column;
+     width: 250px;
+  }
+}
