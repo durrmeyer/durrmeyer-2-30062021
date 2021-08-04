@@ -20,56 +20,76 @@
            
                 <img src="images/logo/Reservia.svg" alt="" class="logo-img">
            
-            <nav class="nav">
                 <ul>
                     <li>
                         <a class="page-courante" href="#container">Hébergement</a>
                     </li>
                     <li>
-                        <a href="#item2">Activités</a>
+                        <a class="page-activite" href="#item2">Activités</a>
                     </li>
                     <li>
                         <a class="connexion" href="#inscription">S'inscrire</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
     </header>
 
     <main>
         <form>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
+           
             <div class="recherche">
-                <i class="fas fa-map-marker-alt"></i>
-                <input class="search" placeholder="Marseille,France">
-                <input class="submit" value="Recherche">
-            </div>
-
-            <div class="content">
-                <div class="filtre">
-                    <h2>filtres</h2>
-                    <div class="box-filtre">
-                        <div class="box">
-                            <i class="fas fa-money-bill-wave"></i>
-                            <input type="text" class="search-filtre" placeholder="Économie" aria-label="search">
-                        </div>
-                        <div class="box">
-                            <i class="fas fa-child"></i>
-                            <input type="text" class="search-filtre" placeholder="Familial" aria-label="search">
-                        </div>
-                        <div class="box">
-                            <i class="fas fa-heart"></i>
-                            <input type="text" class="search-filtre" placeholder="Romantique" aria-label="search">
-                        </div>
-                        <div class="box">
-                            <i class="fas fa-dog"></i>
-                            <input type="text" class="search-filtre" placeholder="Animaux autorisés"
-                                aria-label="search">
-                        </div>
-                    </div>
+                <div class="localisation">
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
+                   <input type="text" class="search" placeholder="Marseille,France">
+                   <button class="submit">Recherche </button>
+                 <!-- <button><i class="fa fa -search"></i></button>-->     
+                 
+                </div>
+             </div>
+           
+        <div class="content">
+            <div class="filtre">
+                <h2>filtres</h2>
             </div>
+            <ul class="box-filtre">
+                <li class="box">
+                    <div class="box-icone">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="box-text-icone">
+                        Économie
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="box-icone">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="box-text-icone">
+                        Familial
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="box-icone">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="box-text-icone">
+                        Romantique
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="box-icone">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <div class="box-text-icone">
+                        Animaux autorisés
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
 
             <div class="info">
                 <i class="fas fa-info"></i>
