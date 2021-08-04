@@ -1,4 +1,3 @@
-
 body {
    background-color: white;
    margin: 20px;
@@ -20,14 +19,14 @@ a:hover {
 
 h3 {
    font-size: 15px;
-}  
+}
 header {
    background-color: white;
 }
-header li{
+header li {
    padding-right: 45px;
 }
-.logo-img{
+.logo-img {
    height: 40px;
    width: 96px;
    display: flex;
@@ -35,7 +34,7 @@ header li{
    align-items: baseline;
    font-size: 12px;
 }
-img .logo-img{
+img .logo-img {
    padding-top: 12px;
 }
 
@@ -45,14 +44,13 @@ img .logo-img{
    justify-content: space-between;
    justify-items: center;
    padding-top: 45px;
-   overflow:hidden;
+   overflow: hidden;
 }
-
 
 .page-courante {
    color: blue;
    border-top: 2px blue solid;
- }
+}
 a.connexion {
    color: #0065fc;
    font-weight: 700;
@@ -64,25 +62,25 @@ a.connexion {
    display: flex;
    flex-wrap: wrap-reverse;
    justify-content: flex-end;
- }
+}
 .nav li {
    margin-right: 30px;
    float: left;
    justify-content: space-between;
 }
-.nav ul li{
+.nav ul li {
    padding-top: 40px;
 }
 .nav a {
    font-size: 1.3em;
-} 
- 
+}
+
 /*main */
 h1 {
    padding-top: 20px;
    font-size: 18px;
 }
-h2{
+h2 {
    padding-left: 15px;
 }
 
@@ -91,23 +89,23 @@ h2{
    flex-direction: row;
    margin-top: 15px;
    margin-bottom: 35px;
- }
-.localisation{
+}
+.localisation {
    display: flex;
    justify-content: center;
    align-items: center;
    margin-left: 18px;
    width: 60px;
    height: 60px;
-   background-color: #F2F2F2;
+   background-color: #f2f2f2;
    border-radius: 12px 0 0 12px;
 }
-.search::placeholder{
+.search::placeholder {
    color: rgb(170, 170, 170);
    font-size: 16px;
    font-weight: 600;
 }
-button.submit{
+button.submit {
    border: none;
    border-radius: 0 14px 14px 0;
    background-color: #0065fc;
@@ -138,21 +136,20 @@ button.submit{
    color: white;
    width: 112px;
 }
-i.fas.fa-map-marker-alt{
+i.fas.fa-map-marker-alt {
    padding-top: 0px;
 }
 
 .filtre {
-   display: inline-flex; 
+   display: inline-flex;
    padding-right: 20px;
 }
 
-
-.content{
+.content {
    display: flex;
    flex-direction: row;
    padding: 0;
-   justify-content: start ;
+   justify-content: start;
 }
 
 .box-filtre {
@@ -171,11 +168,11 @@ i.fas.fa-map-marker-alt{
    padding-top: 6px;
    height: 30px;
 }
-.box:hover{
+.box:hover {
    background-color: aqua;
 }
-.box-icone{
-   background-color: #F2F2F2;
+.box-icone {
+   background-color: #f2f2f2;
    color: blue;
    border-radius: 50% 50%;
    margin-left: 0px;
@@ -183,14 +180,14 @@ i.fas.fa-map-marker-alt{
    margin-right: 15px;
    padding-bottom: 2px;
    height: 40px;
-   width: 40px;   
+   width: 40px;
 }
 
-.box i.fas{
+.box i.fas {
    padding-top: 15px;
    margin-left: 8px;
 }
-.box-text-icone{
+.box-text-icone {
    margin-right: 12px;
 }
 
@@ -214,68 +211,79 @@ i.fas.fa-map-marker-alt{
    border-radius: 50%;
 }
 /* 1ere partie*/
-.card{
-   background-color:  white;
-   border-radius: 17px 17px 0 0 ;
+.card {
+   background-color: white;
+   border-radius: 17px 17px 0 0;
    margin-top: 12px;
    padding-bottom: 10px;
 }
-.container-hebergement{
-   background-color: #F2F2F2;
+.container-hebergement {
+   background-color: #f2f2f2;
    width: 750px;
    border-radius: 15px 15px 15px 15px;
 }
-.img-hebergement{
+.img-hebergement {
    padding-right: 5px;
 }
-.card-hebergement{
+.card-hebergement {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
 }
-.card-text{
+.card-text {
    margin-left: 5px;
    margin-top: -12px;
 }
-.text{
+.text {
    margin-left: 12px;
 }
 
 /*Partie Populaire*/
-.container-populaire{
+.container-populaire {
    background: #f2f2f2;
-   width: 350px;  
+   width: 380px;
    margin-left: 20px;
    border-radius: 15px 15px 15px 15px;
 }
-.card-populaire{
+.card-populaire {
    display: flex;
    justify-content: center;
    background: white;
-   border-radius: 17px 17px 17px 17px ;
+   border-radius: 17px 17px 17px 17px;
    width: 270px;
    margin-left: 35px;
    margin-bottom: 20px;
 }
-.pop{
+.populaire {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+.pop {
    border-radius: 17px 0 0 17px;
    width: 110px;
    margin-left: -5px;
- }
- .card-text-populaire{
+}
+.card-text-populaire {
    width: 135px;
    margin-top: 15px;
    margin-bottom: 5px;
    padding-left: 12px;
- }
+}
+.populaire-icone {
+   padding-left: 80px;
+   padding-top: 19px;
+   font-size: 30px;
+}
 
 /*2ème partie*/
 
-.hotel-price{
+.hotel-price {
    margin-bottom: 8px;
    margin-top: -12px;
 }
-.stars, .stars1 {
+.stars,
+.stars1 {
    color: #0065fc;
    font-size: 12px;
 }
@@ -290,64 +298,63 @@ img {
    border-radius: 17px 17px 0 0;
    object-fit: cover;
    object-position: center;
- }
+}
 #container {
    display: flex;
    flex-wrap: wrap-reverse;
    padding-left: 20px;
 }
 /*Activite*/
-.album{
+.album {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
 }
-.container-activite{
+.container-activite {
    padding-top: 20px;
 }
 
-.img1{
+.img1 {
    height: 300px;
    width: 265px;
    padding-left: 0;
-  
 }
-.img-activite{
+.img-activite {
    margin-top: 22px;
 }
-.img2{
+.img2 {
    height: 150px;
    width: 265px;
    padding-left: 0;
 }
-.img3{
-    height: 80px;
-    width: 265px;
-    padding-left: 0;
-    object-fit: cover;
+.img3 {
+   height: 80px;
+   width: 265px;
+   padding-left: 0;
+   object-fit: cover;
    object-position: 100% 20%;
 }
-.img4{
+.img4 {
    width: 265px;
    height: 100px;
    object-fit: cover;
    object-position: top;
 }
-.img5{
+.img5 {
    width: 265px;
    height: 130px;
    padding-left: 0;
 }
-.activite3{
+.activite3 {
    padding-right: 0px;
 }
-.text-activite{
-   border: 2px solid #F2F2F2;
+.text-activite {
+   border: 2px solid #f2f2f2;
    margin-top: -5px;
    background-color: white;
    border-radius: 0 0 17px 17px;
    padding-left: 5px;
-  }
+}
 
 /*footer*/
 footer {
@@ -362,52 +369,70 @@ ul {
    text-align: left;
 }
 
-.card-text-footer{
-   line-height: 2; 
-
+.card-text-footer {
+   line-height: 2;
 }
-.info-footer{
+.info-footer {
    width: 100%;
    display: flex;
    flex-wrap: wrap;
    padding-right: 45px;
    margin-left: 35px;
 }
-.card-footer{
-    padding-right: 120px;
-    margin-right: 80px;
+.card-footer {
+   padding-right: 120px;
+   margin-right: 80px;
 }
 
-
-@media (max-width: 768px) {
-   .navbar{
+@media (max-width: 650px) {
+   h2 {
+      width: 60%;
+      font-size: 20px;
+   }
+   .populaire-icone {
+      font-size: 20px;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .navbar {
       width: 100%;
    }
-   .nav ul{
+   .nav ul {
       margin-top: -50px;
       padding-right: 56px;
    }
-   a.page-courante{
+   a.page-courante {
       border-top: none;
       border-bottom: 2px blue solid;
    }
-   a.page-activite{
-      border-bottom: 2px #F2F2F2 solid;
+   a.page-activite {
+      border-bottom: 2px #f2f2f2 solid;
       flex-direction: column-reverse;
+      margin-right: 90px;
    }
-   
+   .localisation .fas .fa {
+      padding-bottom: 20px;
+      padding-left: 25px;
+   }
+   .container-populaire {
+      width: 100%;
+   }
+
    .container-hebergement {
-      background: none; 
-     
-  }
-  .box{
-     display: inline-flex;
+      background: none;
+   }
+   .card {
+      box-shadow: 1px 1px 12px #555;
+      margin-bottom: 15px;
+   }
+
+   .box {
+      display: inline-flex;
       margin-bottom: 12px;
-      
-  }
-  .card-footer{
-     display: flex;
-     flex-direction: column;
-     width: 250px;
-  }
+   }
+   .card-footer {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+   }
 }
