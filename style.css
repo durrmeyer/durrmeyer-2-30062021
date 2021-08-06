@@ -1,8 +1,9 @@
 body {
    background-color: white;
-   margin: 20px;
+   margin: 0 auto;
    font-family: "Raleway", sans-serif;
    color: black;
+   max-width: 1060px;
 }
 p {
    font-family: "Raleway", sans-serif;
@@ -22,55 +23,42 @@ h3 {
 }
 header {
    background-color: white;
-}
-header li {
-   padding-right: 45px;
-}
-.logo-img {
-   height: 40px;
-   width: 96px;
-   display: flex;
-   flex-direction: row;
-   align-items: baseline;
-   font-size: 12px;
-}
-img .logo-img {
-   padding-top: 12px;
-}
-
-/* navigation*/
-.navbar {
    display: flex;
    justify-content: space-between;
-   justify-items: center;
-   padding-top: 45px;
-   overflow: hidden;
+   align-items: center;
+   margin-top: 20px;
 }
+.logo img{
+   height: 20px;
+   width: 80px;
+}
+   .navbar {
+      list-style-type: none;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   .navbar ul {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: flex-end;
+   }
+   .navbar li{
+      display: inline;
+      padding: 0 40px;
+   }
+   .page-courante {
+      color: blue;
+      border-top: 2px blue solid;
+      padding-top: 10px;
+   }
+   a.connexion {
+      border-top: none;
+      color: #0065fc;
+      font-weight: 700;
+    }
 
-.page-courante {
-   color: blue;
-   border-top: 2px blue solid;
-}
-a.connexion {
-   color: #0065fc;
-   font-weight: 700;
-   padding-right: 45px;
-}
 
-.navbar ul {
-   list-style-type: none;
-   display: flex;
-   flex-wrap: wrap-reverse;
-   justify-content: flex-end;
-}
-.nav li {
-   margin-right: 30px;
-   float: left;
-   justify-content: space-between;
-}
-.nav ul li {
-   padding-top: 40px;
-}
 .nav a {
    font-size: 1.3em;
 }
@@ -132,17 +120,15 @@ button.submit {
    padding: 5px 25px;
    border-radius: 0 95px 95px 0;
    border: none;
-   background: blue;
+   background: #0065fc;
    color: white;
    width: 112px;
 }
-i.fas.fa-map-marker-alt {
-   padding-top: 0px;
-}
 
-.filtre {
-   display: inline-flex;
-   padding-right: 20px;
+
+.filtre h2{
+   font-size: 24px;
+   display: inline;
 }
 
 .content {
@@ -156,42 +142,37 @@ i.fas.fa-map-marker-alt {
    display: inline-flex;
    flex-direction: row;
    flex-wrap: wrap;
-   padding: 0;
-   justify-content: end;
-   margin-left: 5px;
 }
+.filtre ul li{
+   margin-left: 25px;
+ }
+ .filtre ul li:hover{
+   color: blue;
+   transition-duration: 0,20s;
+ }
 .box {
    border: solid #f2f2f2;
    border-radius: 45px 45px 45px 45px;
    display: flex;
    margin-right: 16px;
+   padding-bottom: 3px;
    padding-top: 6px;
    height: 30px;
+   margin-bottom: 8px;
 }
-.box:hover {
-   background-color: aqua;
-}
-.box-icone {
-   background-color: #f2f2f2;
-   color: blue;
-   border-radius: 50% 50%;
-   margin-left: 0px;
-   margin-top: -10px;
-   margin-right: 15px;
-   padding-bottom: 2px;
-   height: 40px;
-   width: 40px;
+.box-text-icone{
+   padding-right: 12px;
+   padding-top: 2px;
 }
 
-.box i.fas {
-   padding-top: 15px;
-   margin-left: 8px;
+.icone {
+   background-color: #BED7FF;
+   color: #0065fc;
+   padding: 12px;
+   border-radius: 30px;
+   margin-top: -7px;
+   margin-right: 10px;
 }
-.box-text-icone {
-   margin-right: 12px;
-}
-
-/*information*/
 
 .info {
    display: flex;
@@ -401,14 +382,23 @@ ul {
       margin-top: -50px;
       padding-right: 56px;
    }
+   .navbar li{
+      display: inline;
+      padding-top: 22px;
+        }
    a.page-courante {
       border-top: none;
       border-bottom: 2px blue solid;
-   }
+       }
    a.page-activite {
-      border-bottom: 2px #f2f2f2 solid;
+      
       flex-direction: column-reverse;
-      margin-right: 90px;
+   }
+   li a.page-activite{
+      margin-top: 20px;
+      border-bottom: 2px #f2f2f2 solid;
+      
+
    }
    .localisation .fas .fa {
       padding-bottom: 20px;
