@@ -1,10 +1,8 @@
 body {
    background-color: white;
-   margin: 0 auto;
    font-family: "Raleway", sans-serif;
    color: black;
-   max-width: 1060px;
-}
+  }
 p {
    font-family: "Raleway", sans-serif;
    font-size: 12px;
@@ -16,20 +14,30 @@ a {
 a:focus,
 a:hover {
    color: blue;
+   width: 100%;
 }
-
+h2{
+   font-size: 20px;
+}
 h3 {
    font-size: 15px;
 }
+img {
+   width: 200px;
+   height: 140px;
+   padding-left: 4px;
+   margin-top: 4px;
+   border-radius: 17px 17px 0 0;
+   object-fit: cover;
+   object-position: top;
+}
+
 header {
    background-color: white;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-top: 20px;
+   margin-top: 10px;
 }
 .logo img{
-   height: 20px;
+   height: 30px;
    width: 80px;
 }
    .navbar {
@@ -42,6 +50,7 @@ header {
       display: flex;
       flex-wrap: wrap-reverse;
       justify-content: flex-end;
+      margin-top: 10px;
    }
    .navbar li{
       display: inline;
@@ -71,9 +80,9 @@ h1 {
 h2 {
    padding-left: 15px;
 }
-
+/*button search*/
 .recherche {
-   display: inline-flex;
+   display: flex;
    flex-direction: row;
    margin-top: 15px;
    margin-bottom: 35px;
@@ -108,7 +117,7 @@ button.submit {
    background-color: #f2f2f2;
    padding: 5px 10px;
    border-radius: 95px 0 0 95px;
-   padding-top: 12px;
+   padding-top: 3px;
 }
 .search {
    padding: 5px 0;
@@ -124,8 +133,10 @@ button.submit {
    color: white;
    width: 112px;
 }
-
-
+.button-submit{
+   display: none;
+}
+/* Filtres*/
 .filtre h2{
    font-size: 24px;
    display: inline;
@@ -149,6 +160,11 @@ button.submit {
  .filtre ul li:hover{
    color: blue;
    transition-duration: 0,20s;
+   cursor: pointer;
+ }
+ .filtre ul li:hover .icone{
+   background: rgb(139, 240, 226);
+   transition-duration: 0,20s;
  }
 .box {
    border: solid #f2f2f2;
@@ -163,10 +179,11 @@ button.submit {
 .box-text-icone{
    padding-right: 12px;
    padding-top: 2px;
+   font-weight: bold;
 }
 
 .icone {
-   background-color: #BED7FF;
+   background-color: #d6e4f7e7;
    color: #0065fc;
    padding: 12px;
    border-radius: 30px;
@@ -191,7 +208,11 @@ button.submit {
    margin: 18px;
    border-radius: 50%;
 }
-/* 1ere partie*/
+/* Container*/
+#container {
+   display: flex;
+  }
+/*container hebergement*/
 .card {
    background-color: white;
    border-radius: 17px 17px 0 0;
@@ -202,10 +223,12 @@ button.submit {
    background-color: #f2f2f2;
    width: 750px;
    border-radius: 15px 15px 15px 15px;
+   margin-left: 20px;
 }
 .img-hebergement {
    padding-right: 5px;
 }
+
 .card-hebergement {
    display: flex;
    flex-wrap: wrap;
@@ -220,10 +243,12 @@ button.submit {
 }
 
 /*Partie Populaire*/
+
 .container-populaire {
    background: #f2f2f2;
-   width: 380px;
+   width: 350px;
    margin-left: 20px;
+   padding-right: 20px;
    border-radius: 15px 15px 15px 15px;
 }
 .card-populaire {
@@ -246,15 +271,13 @@ button.submit {
    margin-left: -5px;
 }
 .card-text-populaire {
-   width: 135px;
-   margin-top: 15px;
    margin-bottom: 5px;
    padding-left: 12px;
 }
 .populaire-icone {
    padding-left: 80px;
    padding-top: 19px;
-   font-size: 30px;
+   font-size: 20px;
 }
 
 /*2ème partie*/
@@ -271,20 +294,7 @@ button.submit {
 .Icon-starColor {
    color: #f2f2f2;
 }
-img {
-   width: 196px;
-   height: 100px;
-   padding-left: 4px;
-   margin-top: 4px;
-   border-radius: 17px 17px 0 0;
-   object-fit: cover;
-   object-position: center;
-}
-#container {
-   display: flex;
-   flex-wrap: wrap-reverse;
-   padding-left: 20px;
-}
+
 /*Activite*/
 .album {
    display: flex;
@@ -293,6 +303,9 @@ img {
 }
 .container-activite {
    padding-top: 20px;
+}
+.colonne{
+   padding-right: 12px;
 }
 
 .img1 {
@@ -365,16 +378,12 @@ ul {
    margin-right: 80px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
    h2 {
       width: 60%;
       font-size: 20px;
    }
-   .populaire-icone {
-      font-size: 20px;
-      display: flex;
-      flex-wrap: wrap;
-   }
+   
    .navbar {
       width: 100%;
    }
@@ -388,26 +397,37 @@ ul {
         }
    a.page-courante {
       border-top: none;
-      border-bottom: 2px blue solid;
+      border-bottom: 2px solid blue;
+      width: 100%S;
        }
-   a.page-activite {
-      
-      flex-direction: column-reverse;
-   }
+   
    li a.page-activite{
       margin-top: 20px;
-      border-bottom: 2px #f2f2f2 solid;
-      
-
-   }
-   .localisation .fas .fa {
-      padding-bottom: 20px;
-      padding-left: 25px;
-   }
-   .container-populaire {
+      border-bottom: 2px solid #f2f2f2;
       width: 100%;
-   }
-
+   } 
+   .submit{
+      display: none;
+   } 
+   .button-submit {
+   display: flex;
+   border: none;
+   border-radius: 0 14px 14px 0;
+   background-color: #0065fc;
+   color: white;
+   font-weight: 700;
+   font-size: 16px;
+   padding: 17px;
+   cursor: pointer;
+}
+.icone-submit{
+   margin-top: 3px;
+}
+#container{
+   display: flex;
+   flex-wrap: wrap-reverse;
+   padding: 0;
+ }
    .container-hebergement {
       background: none;
    }
@@ -415,14 +435,7 @@ ul {
       box-shadow: 1px 1px 12px #555;
       margin-bottom: 15px;
    }
-
-   .box {
-      display: inline-flex;
-      margin-bottom: 12px;
-   }
-   .card-footer {
-      display: flex;
-      flex-direction: column;
-      width: 250px;
-   }
+   
 }
+
+   
