@@ -23,13 +23,9 @@ h3 {
    font-size: 15px;
 }
 img {
-   width: 200px;
-   height: 140px;
-   padding-left: 4px;
-   margin-top: 4px;
-   border-radius: 17px 17px 0 0;
-   object-fit: cover;
-   object-position: top;
+   width: 100%;
+   max-width: 500px;
+   height: auto;
 }
 
 header {
@@ -40,22 +36,22 @@ header {
    height: 30px;
    width: 80px;
 }
-   .navbar {
+.navbar {
       list-style-type: none;
       width: 100%;
       display: flex;
       justify-content: space-between;
-   }
-   .navbar ul {
+}
+.navbar ul {
       display: flex;
       flex-wrap: wrap-reverse;
       justify-content: flex-end;
       margin-top: 10px;
-   }
-   .navbar li{
+}
+.navbar li{
       display: inline;
       padding: 0 40px;
-   }
+ }
    .page-courante {
       color: blue;
       border-top: 2px blue solid;
@@ -67,7 +63,10 @@ header {
       font-weight: 700;
     }
 
-
+    .stars, .stars-populaire {
+      color: #0065fc;
+      font-size: 12px;
+   }
 .nav a {
    font-size: 1.3em;
 }
@@ -213,20 +212,28 @@ button.submit {
    display: flex;
   }
 /*container hebergement*/
+
+.container-hebergement {
+ 
+   background-color: #f2f2f2;
+   width: 872px;
+   border-radius: 15px 15px 15px 15px;
+  
+}
+.img-hebergement a img {
+   width: 276px;
+   height: 130px;
+   object-fit: cover;
+   border-radius: 15px 15px 0 0;
+}
+
 .card {
    background-color: white;
    border-radius: 17px 17px 0 0;
-   margin-top: 12px;
+   border: 3px solid white;
+   margin-top: 20px;
    padding-bottom: 10px;
-}
-.container-hebergement {
-   background-color: #f2f2f2;
-   width: 750px;
-   border-radius: 15px 15px 15px 15px;
-   margin-left: 20px;
-}
-.img-hebergement {
-   padding-right: 5px;
+  
 }
 
 .card-hebergement {
@@ -241,7 +248,10 @@ button.submit {
 .text {
    margin-left: 12px;
 }
-
+.text p{
+   font-weight: bold;
+   font-size: 16px;
+}
 /*Partie Populaire*/
 
 .container-populaire {
@@ -249,47 +259,34 @@ button.submit {
    width: 350px;
    margin-left: 20px;
    padding-right: 20px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px;
+}
+.populaire-icone{
+   display: flex;
+   justify-content: space-between;
+}
+.populaire-icone i{
+   margin-top: 19px;
 }
 .card-populaire {
-   display: flex;
-   justify-content: center;
-   background: white;
-   border-radius: 17px 17px 17px 17px;
-   width: 270px;
-   margin-left: 35px;
+   margin-top: 19px;
+   margin-left: 14px;
    margin-bottom: 20px;
-}
-.populaire {
    display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-}
-.pop {
+   background: white;
+   border-radius: 17px;
+  }
+.populaire-img a img {
+   width: 135px;
+   height: 146px;
+   margin-left: 3px;
+   margin-top: 3px;
    border-radius: 17px 0 0 17px;
-   width: 110px;
-   margin-left: -5px;
+   object-fit: cover;
 }
+
 .card-text-populaire {
-   margin-bottom: 5px;
    padding-left: 12px;
-}
-.populaire-icone {
-   padding-left: 80px;
-   padding-top: 19px;
-   font-size: 20px;
-}
-
-/*2ème partie*/
-
-.hotel-price {
-   margin-bottom: 8px;
-   margin-top: -12px;
-}
-.stars,
-.stars1 {
-   color: #0065fc;
-   font-size: 12px;
 }
 .Icon-starColor {
    color: #f2f2f2;
@@ -309,41 +306,42 @@ button.submit {
 }
 
 .img1 {
-   height: 300px;
-   width: 265px;
-   padding-left: 0;
+   height: 425px;
+   width: 294px;
+   object-fit: cover;
 }
 .img-activite {
    margin-top: 22px;
 }
 .img2 {
-   height: 150px;
-   width: 265px;
-   padding-left: 0;
+   height: 136px;
+   width: 294px;
+   object-fit: cover;
 }
 .img3 {
-   height: 80px;
-   width: 265px;
+   height: 105px;
+   width: 294px;
    padding-left: 0;
    object-fit: cover;
    object-position: 100% 20%;
 }
 .img4 {
-   width: 265px;
-   height: 100px;
+   width: 294px;
+   height: 137px;
    object-fit: cover;
    object-position: top;
 }
 .img5 {
-   width: 265px;
-   height: 130px;
-   padding-left: 0;
+   width: 294px;
+   height: 157px;
+   object-fit: cover;
+   object-position: top;
 }
 .activite3 {
    padding-right: 0px;
 }
 .text-activite {
-   border: 2px solid #f2f2f2;
+  
    margin-top: -5px;
    background-color: white;
    border-radius: 0 0 17px 17px;
@@ -378,7 +376,7 @@ ul {
    margin-right: 80px;
 }
 
-@media (max-width: 600px) {
+@media (max-width:600px) {
    h2 {
       width: 60%;
       font-size: 20px;
@@ -423,19 +421,20 @@ ul {
 .icone-submit{
    margin-top: 3px;
 }
+
 #container{
    display: flex;
-   flex-wrap: wrap-reverse;
-   padding: 0;
- }
-   .container-hebergement {
-      background: none;
-   }
-   .card {
-      box-shadow: 1px 1px 12px #555;
-      margin-bottom: 15px;
-   }
-   
+   flex-direction: column-reverse;
+}
+.container-hebergement{
+   background: none;
+   margin: 0;
 }
 
+   .card-hebergement{
+     display: flex;
+     flex-direction: column;
+   }
    
+   
+}
