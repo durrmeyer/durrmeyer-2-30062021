@@ -233,6 +233,7 @@ button.submit {
   border: 3px solid white;
   margin-top: 20px;
   padding-bottom: 10px;
+  box-shadow: 2px 2px 2px 2px #F2F2F2;
 }
 
 .card-hebergement {
@@ -485,8 +486,7 @@ ul {
     padding: 17px;
     cursor: pointer;
  }
- 
-    
+   
  }
  @media screen and (max-width: 1020px) {
  
