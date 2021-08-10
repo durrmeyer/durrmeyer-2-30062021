@@ -406,7 +406,7 @@ ul {
 }
 .card-footer {
   padding-right: 120px;
-  margin-right: 80px;
+  margin-right: 73px;
 }
 
 
@@ -507,10 +507,10 @@ ul {
      
    }
    .img-hebergement a img{
-      width: 325px;
       height: 134px;
       object-fit: cover;
-      border-radius: 15px 15px 0 
+      border-radius: 15px 15px 0 0; 
+     
    }
    #container-activites{
      display: flex;
