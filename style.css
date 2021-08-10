@@ -299,7 +299,6 @@ button.submit {
    margin-top: 59px;
    display: flex;
 }
-
 .colonne-active{
   width: 50%;
   display: flex;
@@ -310,16 +309,28 @@ button.submit {
   margin-top: 56px;
 }
 .activite{
-  margin-left: 15px;
-  border-radius: 17px 17px 0 0;
+  margin-left: 15px; 
+  
+}
+.activite4{
   border: 2px solid #f2f2f2;
+  border-radius: 17px;
 }
 
+.activite1{
+  border: 2px solid #f2f2f2;
+  width: 297px;
+  border-radius: 17px;
+}
+.activite2{
+  margin-left: 10px;
+}
 .card-marseille{
   padding-right: 0px;
   
 }
 .img1 {
+  margin-right: 7px;
   height: 425px;
   width: 294px;
   object-fit: cover;
@@ -330,15 +341,15 @@ button.submit {
   border: 2px solid;
 }
 .img2 {
-  height: 136px;
-  width: 294px;
+  height: 168px;
+  width: 296px;
   object-fit: cover;
   border-radius: 17px 17px 0 0;
 }
 .img3 {
   height: 105px;
   width: 294px;
-  margin-top: 147px;
+  margin-top: 113px;
   border-radius: 17px 17px 0 0;
   object-fit: cover;
  justify-items: flex-end;
@@ -367,10 +378,7 @@ margin-top: -5px;
 .text-activite {
  color: black;
  font-weight: bold;
-  margin-top: -5px;
-  background-color: white;
-  border-radius: 0 0 17px 17px;
-  padding-left: 5px;
+  padding-left: 13px;
 }
 /*Pied ce Page*/
 footer {
@@ -480,7 +488,7 @@ ul {
  
     
  }
- @media screen and (max-width: 892px) {
+ @media screen and (max-width: 1020px) {
  
    #container{
       display: flex;
@@ -494,14 +502,20 @@ ul {
     }
    .container-hebergement{
      background-color: white;
-     overflow: hidden;
+     width: 100%;
      display: flex;
+     
    }
    .img-hebergement a img{
       width: 325px;
       height: 134px;
       object-fit: cover;
       border-radius: 15px 15px 0 
+   }
+   #container-activites{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
    }
          
 }
