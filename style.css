@@ -1,5 +1,9 @@
 /*toute la page du site*/
+li{
+  list-style: none;  
+}
 
+/* navigation*/
  nav{
   display: flex;
   flex-wrap: wrap;
@@ -8,17 +12,27 @@
 }
 ul{
   display: flex;
-  justify-content: space-between;
-     
-}
- 
-li{
-  list-style: none;
-  
+  justify-content: space-between;   
 }
 ul a{
   text-decoration: none;
   padding: 11px 40px; 
+  color: #0065fc;
+  font-weight: bold;  
+}
+.nav_item-hebergement{
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 22px;
+}
+.nav_item-activite{
+  color: black;
+}
+/*.nav_item.inscription{
+position: absolute;
+}
+.nav_item a:active{
+  border-bottom: 2px solid #0065fc;
 }
  
  
