@@ -1,80 +1,32 @@
 /*toute la page du site*/
-header{
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-end;
-   flex-wrap: wrap;
-   background-color: white;
-   margin-top: 10px;
-}
-body {
-   background-color: white;
-   font-family: "Raleway", sans-serif;
-   color: black;
- 
-}
-p {
-   font-family: "Raleway", sans-serif;
-   font-size: 12px;
-}
-h1 {
-   font-size: 26px;
- }
-h2{
-   font-size: 20px;
-   padding-left: 15px;
-}
-h3 {
-   font-size: 15px;
-}
-.stars, .stars-populaire {
-   color: #0065fc;
-   font-size: 12px;
-}
 
-/*navigation*/
-#logo{
-   display: flex;
-   flex-direction: row;
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+ nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-nav{
-   width: 100%;
+ul{
+  display: flex;
+  justify-content: space-between;
+     
 }
-nav ul{
-   list-style-type: none;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   margin-top: -54px;
-   
-}
-nav li a{
-   display: flex;
-justify-content: right;
-padding-right: 50px;
-}
-a.page-courante{
-    color: #0065fc;
-    border-top: 1px solid blue;
-    padding-top: 19px;
-}
-.page-activite{
-    color: black;
-    border-top: none;
-    padding-top: 16px;
+ 
+li{
+  list-style: none;
   
 }
-.connection{
-    color: blue;
-    padding-right: 40px;
-    padding-top: 12px;
+ul a{
+  text-decoration: none;
+  padding: 11px 40px; 
 }
+ 
+ 
+ 
 
-/*Recherche*/
+
+
+/*Recherche
 .recherche {
   display: flex;
   flex-direction: row;
@@ -83,7 +35,7 @@ a.page-courante{
 }
 .localisation {
   display: flex;
-  justify-content: center;
+  justify-content: center
   align-items: center;
   margin-left: 18px;
   width: 60px;
@@ -128,7 +80,7 @@ button.submit {
 .icone-submit{
   display: none;
 }
-/* Filtres*/
+/* Filtres
 .filtre h2{
   font-size: 24px;
   display: inline;
@@ -207,11 +159,11 @@ button.submit {
   margin: 18px;
   border-radius: 50%;
 }
-/* Container*/
+/* Container
 #container {
   display: flex;
  }
-/*container hebergement*/
+/*container hebergement
 
 .container-hebergement {
 
@@ -252,7 +204,7 @@ button.submit {
   font-weight: bold;
   font-size: 16px;
 }
-/*Container Populaire*/
+/*Container Populaire
 
 .container-populaire {
   background: #f2f2f2;
@@ -295,7 +247,7 @@ button.submit {
 
 
 
-/*Activite*/
+/*Activitex
 #container-activites{
    margin-top: 59px;
    display: flex;
@@ -381,7 +333,7 @@ margin-top: -5px;
  font-weight: bold;
   padding-left: 13px;
 }
-/*Pied ce Page*/
+/*Pied ce Page
 footer {
   width: 100%;
   background: #f2f2f2;
@@ -411,7 +363,7 @@ ul {
 
 
 
-/*medias*/
+/*medias
 @media screen and (max-width: 634px) {
     .logo{
         margin-top: 2px;
