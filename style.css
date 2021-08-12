@@ -15,7 +15,10 @@ h2{
   margin-left: 10px;
 }
 h3{
-  font-size: 15px;
+  font-size: 16px;
+}
+p{
+  font-size: 14px;
 }
 li{
   list-style: none;  
@@ -25,7 +28,12 @@ i.icone{
   display: flex;
   justify-content: center;
   }
-
+.Icon-star{
+  color: #0065fc;
+}
+.Icon-starColor{
+  color: #F2F2F2;
+}
 
 /* navigation*/
  nav{
@@ -159,10 +167,13 @@ button{
 /*section hébergement*/
 section{
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
  article{
-   background-color: #F2F2F2;
-  width: 80%;
+  background-color: #F2F2F2;
+  border-radius: 17px;
+  width: 70%;
 }  
 #hebergement{
  display: flex;
@@ -172,24 +183,54 @@ section{
  margin-left: 20px;
  margin-right: 20px;
 }
-.card-image{
+#hebergement .card-image{
   margin-bottom: 30px;
+  background-color: white;
+  border-radius: 17px 17px 0 0;
+  width: 267px;
 }
 .card-image img{
-  
   object-fit: cover;
   border-radius: 17px 17px 0 0;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+.card-text h3{
+  margin-top: 0px;
+  margin-top: 5px;
+
 }
 
+
 /* Section populaire*/
-#populaire{
-  border: 2px solid yellow;
-}
-article2{
+aside{
   background-color: #F2F2F2;
-  width: 30%;
+  width: 27%;
   margin-left: 25px;
-}
+  border-radius: 17px
+ }
+ .title{
+   display: flex;
+  }
+  .title i{
+    float: right;
+  }
+ #populaire .card-image{
+   display: flex;
+   background-color: white;
+   border-radius: 17px ;
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-bottom: 30px;
+  }
+ 
+ #populaire .card-image img{
+  width: 140px;
+  height: 148px;
+  border-radius: 17px 0 0 17px;
+  margin-left: 4px;
+ }
+
 
 @media (max-width: 800px){
 nav{
@@ -250,6 +291,11 @@ button{
   flex-wrap: wrap;
   display: flex;
 }
+/*hebergement et populaire*/
+section{
+display: flex;
+flex-direction: column;
+}
 }
   
 
@@ -261,155 +307,7 @@ button{
 
 /*Recherche*/
 
-/*.info {
-  display: flex;
-}
-.info p {
-  margin-top: 26px;
-}
-.fa-info {
-  color: #0065fc;
-  font-size: 15px;
-  border: 2px solid #f2f2f2;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  padding: 5px;
-  margin: 18px;
-  border-radius: 50%;
-}
-/* Container
-#container {
-  display: flex;
- }
-/*container hebergement
-
-.container-hebergement {
-
-  background-color: #f2f2f2;
-  width: 872px;
-  border-radius: 15px 15px 15px 15px;
- 
-}
-.img-hebergement a img {
-  width: 276px;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
-
-.card {
-  background-color: white;
-  border-radius: 17px 17px 0 0;
-  border: 3px solid white;
-  margin-top: 20px;
-  padding-bottom: 10px;
-  box-shadow: 2px 2px 2px 2px #F2F2F2;
-}
-
-.card-hebergement {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.card-text {
-  margin-left: 5px;
-  margin-top: -15px;
-}
-.text {
-  margin-left: 15px;
-}
-.text p{
-  font-weight: bold;
-  font-size: 16px;
-}
-/*Container Populaire
-
-.container-populaire {
-  background: #f2f2f2;
-  width: 350px;
-  margin-left: 20px;
-  padding-right: 20px;
-  border-radius: 15px;
-  padding-bottom: 1px;
-}
-.populaire-icone{
-  display: flex;
-  justify-content: space-between;
-}
-.populaire-icone i{
-  margin-top: 19px;
-}
-.card-populaire {
-  margin-top: 19px;
-  margin-left: 14px;
-  margin-bottom: 20px;
-  display: flex;
-  background: white;
-  border-radius: 17px;
- }
-.populaire-img a img {
-  width: 135px;
-  height: 146px;
-  margin-left: 3px;
-  margin-top: 3px;
-  border-radius: 17px 0 0 17px;
-  object-fit: cover;
-}
-
-.card-text-populaire {
-  padding-left: 15px;
-}
-.Icon-starColor {
-  color: #f2f2f2;
-}
-
-
-
-/*Activitex
-#container-activites{
-   margin-top: 59px;
-   display: flex;
-}
-.colonne-active{
-  width: 50%;
-  display: flex;
-  margin-right: 15px;
-}
-.colonne-active2{
-  display: flex;
-  margin-top: 56px;
-}
-.activite{
-  margin-left: 15px; 
-  
-}
-.activite4{
-  border: 2px solid #f2f2f2;
-  border-radius: 17px;
-}
-
-.activite1{
-  border: 2px solid #f2f2f2;
-  width: 297px;
-  border-radius: 17px;
-}
-.activite2{
-  margin-left: 10px;
-}
-.card-marseille{
-  padding-right: 0px;
-  
-}
-.img1 {
-  margin-right: 7px;
-  height: 425px;
-  width: 294px;
-  object-fit: cover;
-  border-radius: 17px 17px 0 0;
-  border: 2px solid #f2f2f2;
-}
-.card3{
+/*.card3{
   border: 2px solid;
 }
 .img2 {
@@ -482,111 +380,3 @@ ul {
 
 
 
-/*medias
-@media screen and (max-width: 634px) {
-    .logo{
-        margin-top: 2px;
-    }
-    
-  nav li:nth-of-type(1) {
-    padding-top: 70px;
-    margin-left: -106px;
-  }
-  nav li:nth-of-type(2) {
-    padding-top: 72px;
-    margin-left: 20px;
-  }
-  nav li:nth-of-type(3) {
-    margin-left: -90px;
-    padding-top: 18px;
-    font-weight: bolder;
-  }
-  a.page-courante{
-    color: blue;
-    border-top: none;
-    border-bottom: 1px solid blue;
-    padding-bottom: 15px;
-    margin-left: 15px;
-}
-.page-activite{
-   border-bottom: 1px solid #F2F2F2;
-    padding-bottom: 15px;   
-        }
-    h2 {
-       width: 60%;
-       font-size: 20px;
-    }
-    
-    .navbar {
-       width: 100%;
-    }
-    .nav ul {
-       margin-top: -50px;
-       padding-right: 56px;
-    }
-    .navbar li{
-       display: inline;
-       padding-top: 22px;
-         }
-    a.page-courante {
-       border-top: none;
-       border-bottom: 2px solid blue;
-       width: 100%S;
-        }
-    
-    li a.page-activite{
-       margin-top: 20px;
-       border-bottom: 2px solid #f2f2f2;
-       width: 100%;
-    } 
-    .activite{
-      margin-top: 81px;
-    }
-    
-    .submit{
-       display: none;
-    } 
-    .icone-submit {
-    display: flex;
-    border: none;
-    border-radius: 0 14px 14px 0;
-    background-color: #0065fc;
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 17px;
-    cursor: pointer;
- }
-   
- }
- @media screen and (max-width: 1020px) {
- 
-   #container{
-      display: flex;
-      flex-direction: column-reverse;
-   }
-   .container-populaire{
-      width: 100%;
-      padding-right: 20px;
-      margin: 0;
-      overflow: hidden;
-    }
-   .container-hebergement{
-     background-color: white;
-     width: 100%;
-     display: flex;
-     
-   }
-   .img-hebergement a img{
-      height: 134px;
-      object-fit: cover;
-      border-radius: 15px 15px 0 0; 
-     
-   }
-   #container-activites{
-     display: flex;
-     flex-direction: column;
-     width: 100%;
-   }
-         
-}
