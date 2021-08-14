@@ -138,6 +138,7 @@ button{
   padding-left: 1px;
   width: 46px;
   margin-left: 0px;
+  padding-top: 15px;
   border-radius: 50%;
   padding-right: 3px;
 }
@@ -158,6 +159,7 @@ button{
 
 .info p{
   margin-left: 23px;
+  margin-top: 18px;
 }
 .info{
   display: flex;
@@ -234,31 +236,45 @@ aside{
   height: 148px;
   border-radius: 17px 0 0 17px;
   margin-left: 4px;
-}
-  /*section activites Marseille*/
-  section.album{
-    border: 2px solid rebeccapurple;
-
   }
- #activite{
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
- }
- .item-marseille{
-  width: 25%;
- }
- .item-marseille.card-image{
-   border: seagreen 5px solid;
-   margin-left: 33px;
-}
- .item-marseille img{
-  width: 301px;
- }
- .img1{
-  height: 367px;
+  /*section activites Marseille*/
   
- }
+  #activite{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  } 
+  .card_marseille img{
+    width: 287px;
+  }
+  .img1{
+  height: 354px;
+  object-position: center;
+  object-fit: none;
+  }
+  .img2{
+  height: 158px;
+  object-fit: cover;
+  }
+  .img3{
+  height: 117px;
+  object-fit: cover;
+  object-position: top;
+  margin-top: 32px;
+  }
+  .img4{
+  height: 132px;
+  object-fit: cover;
+  object-position: top;
+  }
+  .img5{
+  object-fit: cover;
+  object-position: top;
+  height: 155px;
+  }
+ 
+   
 
 
 @media (max-width: 1200px){
@@ -271,16 +287,15 @@ text-align: center;
 margin-top: 32px;
 padding-left: 0px;
 }
-.nav_item.hebergement{
+.nav_item.hebergement
+.nav_item.activite{
   color: #0065fc;
   border-top: none;
   border-bottom: 2px solid #0065fc;
   padding-top: 22px;
 }
 .nav_item.activite{
-   border-top: none;
-  border-bottom: 2px solid #F2F2F2;
-  padding-top: 22px;
+  color: black;
   padding-left: 74px;
   padding-right: 56px;
 }
@@ -333,13 +348,7 @@ article{
   background-color: white;
   margin-top: 20px;
 }
-#activite{ 
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex: 1;
-  width: 100%;
- }
+
 }
   
 
