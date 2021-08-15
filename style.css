@@ -252,39 +252,60 @@ aside{
     flex-direction: row;
     justify-content: space-between;
   } 
-  .card{
-    border: 2px solid aliceblue;
+  .card,
+  .card1,
+  .card2{ 
+    border: 2px solid #F2F2F2;
+    border-radius: 17px;
+    margin-bottom: 8px;
+    overflow: hidden;
   }
-  .card img{
+  .card1, .img2, .img3{
+    margin-top: 0px;
+    margin-bottom: 18px;
+  }
+  .card h3{
+    margin-left: 15px;
+  }
+  .card1 h3{
+    margin-top: 0; 
+    margin-left: 15px;
+  }
+  .card2 h3{
+    margin-left: 15px;
+  }
+  .card img,
+  .card1 img,
+  .card2 img{
     width: 287px;
+    margin-top: 0;
+    border-radius: 17px 17px 0 0;
   }
   .img1{
   height: 354px;
   object-position: center;
   object-fit: none;
-  }
+ }
   .img2{
   height: 158px;
   object-fit: cover;
-  margin-bottom: 20px;
 }
-
   .img3{
   height: 117px;
   object-fit: cover;
   object-position: top;
   margin-top: 32px;
-  }
+}
   .img4{
   height: 132px;
   object-fit: cover;
   object-position: top;
-  }
+}
   .img5{
   object-fit: cover;
   object-position: top;
   height: 155px;
-  }
+}
  
 /*Pied ce Page*/
 .info-footer {
@@ -311,7 +332,7 @@ aside{
 }
 
 /* media queries*/
-@media (max-width: 1200px){
+@media (max-width: 600px){
 .nav_item.inscription{
   position: absolute;
   top: 0;
