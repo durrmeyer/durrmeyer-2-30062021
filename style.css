@@ -3,12 +3,18 @@ body{
   background-color: white;
   font-family: Raleway;
 }
+main{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 img{
   width: 261px;
   height: 125px;
 }
 h1{
   font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 h2{
   font-size: 20px;
@@ -23,11 +29,6 @@ p{
 li{
   list-style: none;  
 }
-i.icone{
-  padding-top: 17px;
-  display: flex;
-  justify-content: center;
-  }
 .Icon-star{
   color: #0065fc;
 }
@@ -52,21 +53,24 @@ i.icone{
  nav{
   display: flex;
   flex-wrap: wrap;
+ 
   justify-content: space-between;
   align-items: center;
 }
 .logo{
   width: 90px;
+  margin-left: 20px;
 }
 ul{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;  
+  padding-left: 0px;
 }
 ul a{
   text-decoration: none;
-  padding: 11px 40px; 
+  padding: 11px 33px; 
   color: #0065fc;
-  font-weight: bold;  
 }
 .nav_item.hebergement{
   color: #0065fc;
@@ -75,6 +79,9 @@ ul a{
 }
 .nav_item.activite{
   color: black;
+}
+.nav_item.inscription{
+  font-weight: bold;
 }
 
 /* Recherche*/
@@ -86,17 +93,19 @@ form{
 .form_icone{
   background-color: #f2f2f2;
   border-radius:  15px 0 0 15px;
-  width: 50px;
+  width: 29px;
   height: 50px;
+  padding-left: 18px;
 }
-
 input.search{
   font-size: 16px;
   font-weight: 900;
   border: 1px solid #f2f2f2;
   padding-left: 13px;
   padding-right: 0px;
-  cursor: pointer;
+}
+.form_icone i{
+  padding-top: 18px;
 }
 button{
   font-weight: bold;
@@ -106,6 +115,7 @@ button{
   color: white;
   background-color: blue;
   border: 1px solid blue;
+  cursor: pointer;
 }
 .button{
   display: none;
@@ -116,36 +126,30 @@ button{
   display: flex;
   margin-top: 20px;
 }
-.filtre h2{
-  margin-top: 18px;
-
-}
 .box{
-  display: flex;
-}
-.box_filtre{
-  display: flex;
-  margin-left: 17px;
+  display:flex;
   margin-top: 5px;
   padding-right: 13px;
-  margin-bottom: 11px;
-  border: 1px solid #F2F2F2;
+  margin-left: 20px;
+  border: 2px solid #F2F2F2;
   border-radius: 25px 25px 25px 25px;
 }
-.box_filtre i{
-  background-color: rgba(180, 213, 243, 0.651);
-  color: #0065fc;
-  padding-left: 1px;
-  width: 46px;
-  margin-left: 0px;
-  padding-top: 15px;
-  border-radius: 50%;
-  padding-right: 3px;
-}
-.box_filtre p{
-  padding-left: 10px;
+.box p{
+  padding-left: 15px;
   font-weight: bold;
 }
+.box i{
+  background-color: rgba(180, 213, 243, 0.651);
+  color: #0065fc;
+  width: 34px;
+  height: 32px;
+  margin-left: -2px;
+  padding-top: 15px;
+  border-radius: 100%;
+ }
+ .box i.icone{
+   padding-left: 14px;
+ }
 .box_filtre:hover{
   color: blue;
   transition-duration: 0,20s;
@@ -156,27 +160,31 @@ button{
   transition-duration: 0,20s;
 }
 /*Information*/
-
-.info p{
-  margin-left: 23px;
-  margin-top: 18px;
-}
 .info{
   display: flex;
- 
-} 
-.box_info{
-  border: 1px solid #F2F2F2 ;
-  color: #0065fc;
+  margin-top: 20px;
+}
+.info i{
+  padding-left: 11px;
+  padding-top: 2px;
+  margin-left: 0px;
   margin-top: 13px;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%; 
+  font-size: 12px;
+  
 }
-.box_info i{
-  padding-top: 6px;
- font-size: 12px;
+.info i.icone{
+  color: #0065fc;
+  border: 1px solid #F2F2F2;
+  border-radius: 100%;
+  height: 20px;
+  width: 16px;
+  margin-top: 9px;
+  padding-top: 5px;
 }
+.info p{
+  padding-left: 18px; 
+ }
+
 /*section hébergement*/
 section{
   display: flex;
@@ -238,14 +246,16 @@ aside{
   margin-left: 4px;
   }
   /*section activites Marseille*/
-  
   #activite{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
   } 
-  .card_marseille img{
+  .card{
+    border: 2px solid aliceblue;
+  }
+  .card img{
     width: 287px;
   }
   .img1{
@@ -256,7 +266,9 @@ aside{
   .img2{
   height: 158px;
   object-fit: cover;
-  }
+  margin-bottom: 20px;
+}
+
   .img3{
   height: 117px;
   object-fit: cover;
@@ -274,21 +286,45 @@ aside{
   height: 155px;
   }
  
-   
+/*Pied ce Page*/
+.info-footer {
+  width: 100%;
+  background: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.card-footer{ 
+  padding-right: 10%;
+  margin-left: 20px;
+}
+.card-footer ul{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+.card-footer ul a{
+  padding: 0;
+  color: black;
+  font-weight: normal;
+  line-height: 2rem;
+}
 
-
+/* media queries*/
 @media (max-width: 1200px){
-nav{
-  position: relative;
+.nav_item.inscription{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 64px;
 }
-ul{
-flex: auto;
+.nav ul{
 text-align: center;
-margin-top: 32px;
-padding-left: 0px;
+margin-top: 22px;
+padding-right: 83px;
+padding-right: 77px;
 }
-.nav_item.hebergement
-.nav_item.activite{
+.nav_item.hebergement{ 
   color: #0065fc;
   border-top: none;
   border-bottom: 2px solid #0065fc;
@@ -296,19 +332,17 @@ padding-left: 0px;
 }
 .nav_item.activite{
   color: black;
+  border-top: none;
+  border-bottom: 2px solid #F2F2F2;
+  padding-top: 22px;
   padding-left: 74px;
   padding-right: 56px;
 }
 .nav_item a{
   display: flex;
   justify-content: center;
-  
 }
-.nav_item.inscription{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+
 /*recherche*/
 button{
   display: none;
@@ -325,69 +359,15 @@ button{
   margin-left: -13px;
   color: white;
 }
+.button .icone{
+  padding-top: 17px;
+}
 /*Filtres*/
 .filtre{
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  margin-left: 15px;
+ }
 }
-.box{
-  flex-wrap: wrap;
-  display: flex;
-}
+
 /*hebergement et populaire*/
-section{
-display: flex;
-flex-direction: column-reverse;
-}
-aside, article{
-  width: 100%;
-  margin-left: 0;
-}
-article{
-  background-color: white;
-  margin-top: 20px;
-}
-
-}
-  
-
- 
- 
-
-
-
-/*Recherche*/
-
-/*.card3{
- 
-/*Pied ce Page
-footer {
-  width: 100%;
-  background: #f2f2f2;
-  margin-top: 30px;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
-  text-align: left;
-}
-
-.card-text-footer {
-  line-height: 2;
-}
-.info-footer {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 45px;
-  margin-left: 35px;
-}
-.card-footer {
-  padding-right: 150px;
-  margin-right: 73px;
-}
-
-
 
