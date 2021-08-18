@@ -4,16 +4,18 @@ body{
   font-family: Raleway;
 }
 main{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 15px;
+  margin-right: 15px
 }
+
 img{
-  width: 261px;
-  height: 125px;
+  width: 100%;
+  cursor: pointer;
+  object-fit: cover;
 }
 h1{
-  font-size: 25px;
-  margin-top: 0px;
+  font-size: 20px;
+  margin-top: 15px;
   margin-bottom: 4px;
 }
 h2{
@@ -21,7 +23,7 @@ h2{
   margin-left: 10px;
 }
 h3{
-  font-size: 16px;
+  font-size: 15px;
 }
 p{
   font-size: 14px;
@@ -37,6 +39,7 @@ li{
 }
 .card-text{
   padding-left: 12px;
+  margin-bottom: 10px;
  }
 .card-text p{
   margin-bottom: 0px;
@@ -44,30 +47,35 @@ li{
   line-height: 2em;
 }
 .card-text h3{
-  margin-bottom: 0px;
   margin-top: 5px;
-
+  margin-left: 0px;
+  margin-bottom: 0px;
 }
 
 /* navigation*/
- nav{
+ header{
   display: flex;
-  flex-wrap: wrap;
- 
+  position: relative;
   justify-content: space-between;
-  align-items: center;
-}
+  }
 .logo{
-  width: 90px;
-  margin-left: 20px;
+  width: 84px;
+  height: 33px;
+  margin-left: 15px;
+  margin-top: 8px;
 }
-ul{
+
+nav{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;  
-  padding-left: 0px;
+  flex: 1;
+  justify-content: center;
 }
-ul a{
+nav ul{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+nav li a{
   text-decoration: none;
   padding: 11px 33px; 
   color: #0065fc;
@@ -124,6 +132,8 @@ button{
 /*Filtres*/
 .filtre{
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   margin-top: 20px;
 }
 .box{
@@ -132,7 +142,7 @@ button{
   padding-right: 13px;
   margin-left: 20px;
   border: 2px solid #F2F2F2;
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 25px ;
 }
 .box p{
   padding-left: 15px;
@@ -150,12 +160,16 @@ button{
  .box i.icone{
    padding-left: 14px;
  }
-.box_filtre:hover{
+ .box_filtre{
+  display: flex;
+  flex-wrap: wrap;
+}
+.box:hover{
   color: blue;
   transition-duration: 0,20s;
   cursor: pointer;  
 }
-.box_filtre:hover .icone{
+.box:hover .icone{
   background: rgb(139, 240, 226);
   transition-duration: 0,20s;
 }
@@ -169,8 +183,7 @@ button{
   padding-top: 2px;
   margin-left: 0px;
   margin-top: 13px;
-  font-size: 12px;
-  
+  font-size: 12px;  
 }
 .info i.icone{
   color: #0065fc;
@@ -187,71 +200,82 @@ button{
 
 /*section hébergement*/
 section{
+    display: flex;
+}
+article{
+  padding-right: 12px;
+  width: 80%; 
+}
+article h3{
+  margin-top: 40px;
+  margin-left: 10px;
+}
+article, aside{
+  background-color: #F2F2F2;
+  border-radius: 17px;
+}
+#hebergement{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 20px;
-}
- article{
-  background-color: #F2F2F2;
-  border-radius: 17px;
-  width: 70%;
-}  
-#hebergement{
- display: flex;
- flex-wrap: wrap;
- flex-direction: row;
- justify-content: space-between;
- margin-left: 20px;
- margin-right: 20px;
+justify-content: space-around; 
 }
 #hebergement .card-image{
-  margin-bottom: 30px;
   background-color: white;
-  border-radius: 17px 17px 0 0;
-  width: 267px;
+  border-radius: 17px;
+  border: 2px solid white;
+  margin-top: 20px;
+  margin-left: 8px;
 }
-.card-image img{
+#hebergement img{
+  width: 213px;
+  height: 101px;
   object-fit: cover;
   border-radius: 17px 17px 0 0;
-  margin-left: 2px;
-  margin-top: 3px;
 }
-/* Section populaire*/
 aside{
-  background-color: #F2F2F2;
-  width: 29%;
-  margin-left: 12px;
-  border-radius: 17px
- }
- .title{
-   display: flex;
-  }
-  .title i{
-    float: right;
-  }
- #populaire .card-image{
-   display: flex;
-   background-color: white;
-   border-radius: 17px ;
-   margin-left: 15px;
-   margin-right: 15px;
-   margin-bottom: 30px;
-  }
- 
- #populaire .card-image img{
-  width: 140px;
-  height: 148px;
-  border-radius: 17px 0 0 17px;
+  margin-left: 10px;
+  width: 40%;
+}
+aside i{
+  float: right;
+  padding-right: 12px;
+}
+#populaire{
+  margin-right: 20px;
+  margin-top: 38px;
+}
+#populaire h3{
+  margin-top: 12px;
+}
+#populaire .card-image{
+  display: flex;
+  margin-left: 21px;
+  border-radius: 17px;
+  margin-top: 12px;
+  background-color: white;
+  margin-bottom: 28px;
+}
+#populaire .card-image img{
+  width: 121px;
+  height: 138px; 
+  margin-top: 3px;
   margin-left: 4px;
-  }
+  border-radius: 17px 0 0 17px;
+}
+#populaire .Icon-star{
+  margin-top: 40px;
+}
+
+
   /*section activites Marseille*/
   #activite{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-  } 
+    margin-bottom: 40px;
+      } 
   .card,
   .card1,
   .card2{ 
@@ -277,13 +301,12 @@ aside{
   .card img,
   .card1 img,
   .card2 img{
-    width: 287px;
+    width: 288px;
     margin-top: 0;
     border-radius: 17px 17px 0 0;
   }
   .img1{
-  height: 354px;
-  object-position: center;
+  height: 352px;
   object-fit: none;
  }
   .img2{
@@ -302,49 +325,59 @@ aside{
   object-position: top;
 }
   .img5{
+  height: 155px;
   object-fit: cover;
   object-position: top;
-  height: 155px;
 }
  
-/*Pied ce Page*/
-.info-footer {
-  width: 100%;
-  background: #f2f2f2;
+/*Pied de Page*/
+footer{
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  background-color: #F2F2F2;
 }
-.card-footer{ 
-  padding-right: 10%;
-  margin-left: 20px;
+.card-footer{
+  margin-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  flex:1;
 }
 .card-footer ul{
-  display: flex;
-  flex-direction: column;
+  text-decoration: none;
   padding-left: 0px;
 }
-.card-footer ul a{
-  padding: 0;
-  color: black;
-  font-weight: normal;
-  line-height: 2rem;
+.card-footer ul li{
+  padding-left: 0px;
+  line-height: 26px;
 }
+.card-footer a{
+  text-decoration: none;
+  color: black;
+}
+
 
 /* media queries*/
 @media (max-width: 600px){
-.nav_item.inscription{
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav_item.inscription{
   position: absolute;
   top: 0;
-  right: 0;
-  padding-top: 64px;
+  right:0;
+  padding-right: 8px;
 }
+.logo{
+  margin-top: 1px;
+}
+
 .nav ul{
 text-align: center;
 margin-top: 22px;
 padding-right: 83px;
 padding-right: 77px;
 }
+
 .nav_item.hebergement{ 
   color: #0065fc;
   border-top: none;
@@ -352,19 +385,12 @@ padding-right: 77px;
   padding-top: 22px;
 }
 .nav_item.activite{
-  color: black;
-  border-top: none;
+   border-top: none;
   border-bottom: 2px solid #F2F2F2;
   padding-top: 22px;
   padding-left: 74px;
   padding-right: 56px;
 }
-.nav_item a{
-  display: flex;
-  justify-content: center;
-}
-
-/*recherche*/
 button{
   display: none;
 }
@@ -380,15 +406,61 @@ button{
   margin-left: -13px;
   color: white;
 }
+.colonne_marseille,
+.card img,
+.card1 .img2,
+.card1 .img3,
+.card2 .img4,
+.card2 .img5{ 
+  width: 100%;
+  overflow: hidden;
+}
+#hebergement img,
+.card-image,
+.card-image img{
+  width: 100%;
+}
+#populaire .card-image{
+  margin-left: 10px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+}
+}
+@media (max-width: 1020px){
+/*recherche*/
+
 .button .icone{
   padding-top: 17px;
 }
 /*Filtres*/
 .filtre{
   display: flex;
-  flex-direction: column;
- }
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+section{
+  display: flex;
+  flex-direction: column-reverse;
+}
+article,
+aside{
+  width: 100%;
+  overflow: hidden;
+  margin-left: 0px;
+}
+article{
+background-color: white;
+}
+#hebergement .card-image{
+  box-shadow: 1px 1px 11px 3px #F2F2F2;
+}
+#hebergement img{
+  height: 197px;
+}
+.card-footer{
+  padding-right: 70px;
 }
 
-/*hebergement et populaire*/
-
+}
