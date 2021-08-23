@@ -235,7 +235,7 @@ article, aside{
 }
 aside{
   margin-left: 10px;
-  width: 40%;
+  width: 32%;
 }
 aside i{
   float: right;
@@ -258,13 +258,13 @@ aside i{
 }
 #populaire .card-image img{
   width: 121px;
-  height: 138px; 
+  height: 146px; 
   margin-top: 3px;
   margin-left: 4px;
   border-radius: 17px 0 0 17px;
 }
 #populaire .Icon-star{
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 
@@ -421,6 +421,7 @@ button{
 .card1 .img3,
 .card2 .img5{
   height: 168px;
+  object-fit: cover;
  }
 #populaire .card-image{
   margin-left: 10px;
