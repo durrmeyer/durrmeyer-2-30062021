@@ -2,7 +2,7 @@
 body{
   background-color: white;
   font-family: Raleway;
-  margin: 0;
+ 
 }
 main{
   margin-left: 15px;
@@ -121,8 +121,8 @@ button{
   padding-right: 20px;
   padding-left: 14px;
   color: white;
-  background-color: blue;
-  border: 1px solid blue;
+  background-color: #0065fc;
+  border: 1px solid #0065fc;
   cursor: pointer;
 }
 .button{
@@ -165,7 +165,6 @@ button{
 }
 .box:hover{
   color: blue;
-  transition-duration: 0,20s;
   cursor: pointer;  
 }
 .box:hover .icone{
@@ -210,7 +209,7 @@ article h3{
 }
 article, aside{
   background-color: #F2F2F2;
-  border-radius: 17px;
+  border-radius: 20px;
 }
 .album{
   margin-top: 50px;
@@ -219,11 +218,11 @@ article, aside{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-justify-content: space-around; 
+  justify-content: space-around; 
 }
 #hebergement .card-image{
   background-color: white;
-  border-radius: 17px;
+  border-radius: 20px;
   border: 2px solid white;
   margin-top: 20px;
   margin-left: 8px;
@@ -252,7 +251,7 @@ aside i{
 #populaire .card-image{
   display: flex;
   margin-left: 21px;
-  border-radius: 17px;
+  border-radius: 20px;
   margin-top: 12px;
   background-color: white;
   margin-bottom: 28px;
@@ -353,7 +352,7 @@ footer{
 
 
 /* media queries*/
-@media (max-width: 600px){
+@media (max-width: 767px){
   header{
     display: flex;
     flex-direction: column;
@@ -401,6 +400,9 @@ button{
   margin-left: -13px;
   color: white;
 }
+.box_filtre{
+  margin-left: -22px;
+}
 .colonne_marseille,
 .card .img,
 .card1 .img2,
@@ -408,7 +410,6 @@ button{
 .card2 .img4,
 .card2 .img5{ 
   width: 100%;
-
 }
 #hebergement img,
 .card-image,
@@ -416,9 +417,11 @@ button{
 .card .img1{
   width: 100%;
 }
-.card1 .img3{
-  height: 137px;
-}
+.card .img1,
+.card1 .img3,
+.card2 .img5{
+  height: 168px;
+ }
 #populaire .card-image{
   margin-left: 10px;
 }
@@ -427,14 +430,14 @@ footer{
   flex-direction: column;
 }
 }
-@media (max-width: 1020px){
+@media (max-width: 1024px){
 /*recherche*/
 
 .button .icone{
   padding-top: 17px;
 }
 /*Filtres*/
-.filtre{
+.filtre{ 
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
