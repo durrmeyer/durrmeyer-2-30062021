@@ -392,7 +392,7 @@ footer{
   border-top: none;
   border-bottom: 2px solid #F2F2F2;
   padding-top: 22px;
-  padding-left: 76px;
+  padding-left: 60px;
   padding-right: 51px;
 }
 button{
@@ -414,7 +414,7 @@ form .search{
   padding-left: 17px;
 }
 .box_filtre{
-  margin-left: -22px;
+  margin-left: -28px;
 }
 .colonne_marseille,
 .card .img,
