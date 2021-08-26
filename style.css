@@ -160,6 +160,7 @@ button{
  }
  .box i.icone{
    padding-left: 14px;
+   margin-left: -2px;
  }
  .box_filtre{
   display: flex;
