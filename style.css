@@ -71,13 +71,15 @@ nav{
   justify-content: center;
 }
 nav ul{
-  width: 100%;
   display: flex;
   justify-content: flex-end;
+  padding-left: 0px;
+  width: 100%;
 }
 nav li a{
   text-decoration: none;
-  padding: 11px 33px; 
+  padding-left: 33px;
+  padding-right: 6px;
   color: #0065fc;
 }
 .nav_item.hebergement{
@@ -122,7 +124,7 @@ button{
   padding-left: 14px;
   color: white;
   background-color: #0065fc;
-  border: 1px solid #0065fc;
+  border: none;
   cursor: pointer;
 }
 .button{
@@ -199,15 +201,15 @@ button{
 section{
     display: flex;
 }
-article{
+section h3{
+  margin-top: 50px;
+  margin-left: 37px;
+}
+.article{
   padding-right: 12px;
   width: 80%; 
 }
-article h3{
-  margin-top: 40px;
-  margin-left: 10px;
-}
-article, aside{
+.article, aside{
   background-color: #F2F2F2;
   border-radius: 20px;
 }
@@ -223,7 +225,9 @@ article, aside{
 #hebergement .card-image{
   background-color: white;
   border-radius: 20px;
-  border: 2px solid white;
+  padding-top: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
   margin-top: 20px;
   margin-left: 8px;
 }
@@ -232,6 +236,9 @@ article, aside{
   height: 101px;
   object-fit: cover;
   border-radius: 17px 17px 0 0;
+}
+#hebergement .card-text{
+  margin: 0;
 }
 aside{
   margin-left: 10px;
@@ -252,7 +259,6 @@ aside i{
   display: flex;
   margin-left: 21px;
   border-radius: 20px;
-  margin-top: 12px;
   background-color: white;
   margin-bottom: 28px;
 }
@@ -353,36 +359,37 @@ footer{
 
 /* media queries*/
 @media (max-width: 767px){
-  header{
-    display: flex;
-    flex-direction: column;
-  }
-  .nav_item.inscription{
+ header{
+  display: flex;
+  flex-direction: column;
+}
+.nav_item.inscription{
   position: absolute;
   top: 0;
   right:0;
   padding-right: 8px;
+  margin-top: 5px;
 }
 .logo{
   margin-top: 1px;
 }
 .nav ul{
-text-align: center;
-margin-top: 22px;
-padding-right: 83px;
-padding-right: 77px;
+  text-align: center;
+  margin-top: 22px;
+  justify-content: center;
 }
 .nav_item.hebergement{ 
   color: #0065fc;
   border-top: none;
   border-bottom: 2px solid #0065fc;
   padding-top: 22px;
+  padding-left: 40px;
 }
 .nav_item.activite{
-   border-top: none;
+  border-top: none;
   border-bottom: 2px solid #F2F2F2;
   padding-top: 22px;
-  padding-left: 74px;
+  padding-left: 96px;
   padding-right: 56px;
 }
 button{
@@ -392,7 +399,6 @@ button{
   display: flex;
   border-radius: 15px 15px 15px 15px;
   background-color: blue;
-  border: 1px solid blue;
   padding-top: 0px;
   padding-left: 18px;
   padding-right: 19px;
@@ -447,13 +453,13 @@ section{
   display: flex;
   flex-direction: column-reverse;
 }
-article,
+.article,
 aside{
   width: 100%;
   overflow: hidden;
   margin-left: 0px;
 }
-article{
+.article{
 background-color: white;
 }
 #hebergement .card-image{
