@@ -68,13 +68,11 @@ li{
 nav{
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: right;
 }
 nav ul{
   display: flex;
   justify-content: flex-end;
-  padding-left: 0px;
-  width: 100%;
 }
 nav li a{
   text-decoration: none;
@@ -378,6 +376,10 @@ footer{
   text-align: center;
   margin-top: 22px;
   justify-content: center;
+  display: flex;
+} 
+.nav li{
+  margin-right: -11px;
 }
 .nav_item.hebergement{ 
   color: #0065fc;
@@ -390,8 +392,8 @@ footer{
   border-top: none;
   border-bottom: 2px solid #F2F2F2;
   padding-top: 22px;
-  padding-left: 96px;
-  padding-right: 56px;
+  padding-left: 76px;
+  padding-right: 51px;
 }
 button{
   display: none;
@@ -406,6 +408,10 @@ button{
   padding-bottom: 0px;
   margin-left: -13px;
   color: white;
+}
+form .search{
+  width: 60%;
+  padding-left: 17px;
 }
 .box_filtre{
   margin-left: -22px;
