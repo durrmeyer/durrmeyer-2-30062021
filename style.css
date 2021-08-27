@@ -65,14 +65,14 @@ li{
   margin-left: 15px;
   margin-top: 8px;
 }
-nav{
+/*nav{
   display: flex;
   flex: 1;
   justify-content: right;
-}
+}*/
 nav ul{
   display: flex;
-  justify-content: flex-end;
+  padding-left: 0px;
 }
 nav li a{
   text-decoration: none;
@@ -357,8 +357,12 @@ footer{
 
 
 /* media queries*/
-@media (max-width: 767px){
- header{
+@media (max-width: 480px){
+body{
+  margin-left: 0;
+  margin-right: 0;
+}
+header{
   display: flex;
   flex-direction: column;
 }
@@ -372,29 +376,31 @@ footer{
 .logo{
   margin-top: 1px;
 }
-.nav ul{
-  text-align: center;
-  margin-top: 22px;
-  justify-content: center;
+nav ul{
   display: flex;
-} 
-.nav li{
-  margin-right: -11px;
+  flex-wrap: wrap; 
+}
+nav li{
+  width: 50%;
+}
+nav li a{
+  padding-right: 43px;
 }
 .nav_item.hebergement{ 
   color: #0065fc;
   border-top: none;
   border-bottom: 2px solid #0065fc;
   padding-top: 22px;
-  padding-left: 40px;
+  display: flex;
+ 
 }
 .nav_item.activite{
   border-top: none;
   border-bottom: 2px solid #F2F2F2;
   padding-top: 22px;
-  padding-left: 60px;
-  padding-right: 51px;
+  display: flex;
 }
+
 button{
   display: none;
 }
@@ -413,9 +419,11 @@ form .search{
   width: 60%;
   padding-left: 17px;
 }
-.box_filtre{
-  margin-left: -28px;
+.box{
+  margin-left: 0;
+  margin-right: 10px;
 }
+
 .colonne_marseille,
 .card .img,
 .card1 .img2,
