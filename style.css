@@ -399,6 +399,7 @@ nav li a{
   border-bottom: 2px solid #F2F2F2;
   padding-top: 22px;
   display: flex;
+  justify-content: center;
 }
 
 button{
