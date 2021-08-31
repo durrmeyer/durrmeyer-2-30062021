@@ -449,6 +449,7 @@ footer{
   display: flex;
   flex-direction: column;
   margin-right: 5px;
+  margin-left: 5px;
 }
 }
 @media (max-width: 1024px){
