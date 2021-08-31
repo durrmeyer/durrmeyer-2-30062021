@@ -2,7 +2,8 @@
 body{
   background-color: white;
   font-family: Raleway;
- 
+  max-width: 1250px;
+  margin: 8px auto;
 }
 main{
   margin-left: 15px;
@@ -131,29 +132,38 @@ button{
   flex-direction: row;
   margin-top: 20px;
 }
+.filtre h2{
+  font-size: 16px;
+}
 .box{
   display:flex;
-  margin-top: 5px;
   padding-right: 13px;
   margin-left: 20px;
   border: 2px solid #F2F2F2;
   border-radius: 25px ;
+  height: 42px;
+  
 }
 .box p{
-  padding-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 12px;
+  padding-left: 17px;
   font-weight: bold;
+  font-size: 16px;
 }
 .box i{
   background-color: rgba(180, 213, 243, 0.651);
   color: #0065fc;
-  width: 34px;
-  height: 32px;
-  padding-top: 15px;
+  width: 44px;
+  height: 44px;
+  
   border-radius: 100%;
  }
  .box i.icone{
-   padding-left: 14px;
-   margin-left: -2px;
+   display: flex;
+   justify-items: center;
+   justify-content: center;
  }
  .box_filtre{
   display: flex;
@@ -224,9 +234,10 @@ section h3{
   padding-right: 4px;
   margin-top: 20px;
   margin-left: 8px;
+  padding-bottom: 10px;
 }
 #hebergement img{
-  width: 213px;
+  width: 234px;
   height: 101px;
   object-fit: cover;
   border-radius: 17px 17px 0 0;
@@ -383,10 +394,11 @@ nav li a{
   padding-right: 43px;
 }
 .nav_item.hebergement{ 
-  color: #0065fc;
+  color: #0065fcc0;
   border-top: none;
   border-bottom: 2px solid #0065fc;
   padding-top: 22px;
+  padding-bottom: 7px;
   display: flex;
  
 }
@@ -395,6 +407,7 @@ nav li a{
   border-bottom: 2px solid #F2F2F2;
   padding-top: 22px;
   padding-left: 67px;
+  padding-bottom: 7px;
   display: flex;
   justify-content: center;
 }
@@ -452,7 +465,7 @@ footer{
   margin-left: 5px;
 }
 }
-@media (max-width: 1024px){
+@media (max-width: 1200px){
 /*recherche*/
 
 .button .icone{
