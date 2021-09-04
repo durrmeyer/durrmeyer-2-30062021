@@ -131,51 +131,59 @@ button{
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 20px;
-}
+  }
 .filtre h2{
-  font-size: 16px;
+  font-size: 15px;
+  margin-top: 13px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 9px;
 }
 .box{
-  display:flex;
+  display: flex;
   padding-right: 13px;
   margin-left: 20px;
   border: 2px solid #F2F2F2;
   border-radius: 25px ;
   height: 42px;
-  
 }
-.box p{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 12px;
-  padding-left: 17px;
-  font-weight: bold;
-  font-size: 16px;
-}
-.box i{
-  background-color: rgba(180, 213, 243, 0.651);
-  color: #0065fc;
-  width: 44px;
-  height: 44px;
-  
-  border-radius: 100%;
- }
- .box i.icone{
-   display: flex;
-   justify-items: center;
-   justify-content: center;
- }
- .box_filtre{
+.box-filtre{
   display: flex;
-  flex-wrap: wrap;
+  margin-left: 20px;
+  padding-right: 21px;
+  margin-bottom: 4px;
+  border: 2px solid #F2F2F2;
+  border-radius: 29px;
+  height: 39px;
 }
-.box:hover{
-  color: blue;
+.filtre_icone{
+  background-color: #F2F2F2;  
+  border-radius:  100%;
+  width: 39px;
+  height: 39px;  
+}
+.box-filtre:hover{
+  color: #0065fc;
   cursor: pointer;  
 }
-.box:hover .icone{
-  background: rgb(139, 240, 226);
+.box-filtre:hover .filtre_icone{
+  background-color: rgb(239, 205, 255);
 }
+.filtre_icone i{
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  padding-right: 3px;
+  color: #0065fc;
+}
+.box-filtre .text p{
+  margin-top: 13px;
+  margin-left: 18px;
+  font-weight: bold;
+}
+
 /*Information*/
 .info{
   display: flex;
@@ -289,7 +297,7 @@ aside i{
   .card,
   .card1,
   .card2{ 
-    border: 2px solid #F2F2F2;
+    box-shadow: 0px 0px 20px #f2f2f2;
     border-radius: 20px;
     margin-bottom: 8px;
     overflow: hidden;
@@ -361,14 +369,37 @@ footer{
   text-decoration: none;
   color: black;
 }
-
-
 /* media queries*/
-@media (max-width: 480px){
-body{
-  margin-left: 0;
-  margin-right: 0;
+
+@media (max-width: 1190px) {
+  aside{
+    width: 100%; 
+  }
+  section{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .article{
+      background: white;
+      width: 100%;
+    }
+    #hebergement img{
+      width: 277px;
+    }
+    .card img, .card1 img, .card2 img{
+      width: 417px;
+    }
 }
+
+
+@media  (max-width: 872px){
+  .card img, .card1 img, .card2 img {
+    width: 100%;
+  }
+}
+/*MEDIA MOBILE*/
+@media  (max-width: 840px){
+
 header{
   display: flex;
   flex-direction: column;
@@ -426,6 +457,9 @@ button{
   margin-left: -13px;
   color: white;
 }
+.button i{
+  margin-top: 18px;
+}
 form .search{
   width: 60%;
   padding-left: 17px;
@@ -433,6 +467,10 @@ form .search{
 .box{
   margin-left: 0;
   margin-right: 10px;
+}
+.box_icone{
+  display: flex;
+  justify-content: center;
 }
 
 .colonne_marseille,
@@ -443,20 +481,43 @@ form .search{
 .card2 .img5{ 
   width: 100%;
 }
+
 #hebergement img,
 .card-image,
 .card-image img,
 .card .img1{
   width: 100%;
+height: 180px;
+  
 }
 .card .img1,
 .card1 .img3,
+.card2 .img4,
 .card2 .img5{
-  height: 168px;
+  height: 248px;
   object-fit: cover;
+  border: 2px solid #F2F2F2;
  }
 #populaire .card-image{
   margin-left: 10px;
+  width: 100%;
+  height: 160px;
+}
+#populaire .card-image img {
+  width: 150px;
+  height: 153px;
+}
+.album h2{
+  margin-top: 35px;
+}
+#hebergement .card-image{
+  height: 265px;
+  border: 2px solid #F2F2F2;
+  padding-bottom: 0px;
+}
+section h3{
+  margin-left: 9px;
+  margin-top: 26px;
 }
 footer{
   display: flex;
@@ -465,35 +526,4 @@ footer{
   margin-left: 5px;
 }
 }
-@media (max-width: 1200px){
-/*recherche*/
 
-.button .icone{
-  padding-top: 17px;
-}
-/*Filtres*/
-.filtre{ 
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-section{
-  display: flex;
-  flex-direction: column-reverse;
-}
-.article,
-aside{
-  width: 100%;
-  overflow: hidden;
-  margin-left: 0px;
-}
-.article{
-background-color: white;
-}
-#hebergement .card-image{
-  box-shadow: 1px 1px 11px 3px #F2F2F2;
-}
-#hebergement img{
-  height: 197px;
-}
-}
