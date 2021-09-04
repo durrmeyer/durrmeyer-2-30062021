@@ -395,6 +395,7 @@ footer{
 @media  (max-width: 872px){
   .card img, .card1 img, .card2 img {
     width: 100%;
+    border: #F2F2F2 2px solid;
   }
 }
 /*MEDIA MOBILE*/
