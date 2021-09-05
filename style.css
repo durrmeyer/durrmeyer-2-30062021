@@ -9,7 +9,6 @@ main{
   margin-left: 15px;
   margin-right: 15px
 }
-
 img{
   width: 100%;
   cursor: pointer;
@@ -55,7 +54,7 @@ li{
 }
 
 /* navigation*/
- header{
+header{
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -131,7 +130,7 @@ button{
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 20px;
-  }
+ }
 .filtre h2{
   font-size: 15px;
   margin-top: 13px;
@@ -211,7 +210,7 @@ button{
 
 /*section hébergement*/
 section{
-    display: flex;
+  display: flex;
 }
 section h3{
   margin-top: 50px;
@@ -287,61 +286,57 @@ aside i{
 }
 
   /*section activites Marseille*/
-  #activite{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 40px;
-      } 
-  .card,
-  .card1,
-  .card2{ 
-    box-shadow: 0px 0px 20px #f2f2f2;
-    border-radius: 20px;
-    margin-bottom: 8px;
-    overflow: hidden;
-  }
-  .card1, .img2, .img3{
-    margin-top: 0px;
-    margin-bottom: 18px;
-  }
-  .card h3{
-    margin-left: 15px;
-  }
-  .card1 h3{
-    margin-top: 0; 
-    margin-left: 15px;
-  }
-  .card2 h3{
-    margin-left: 15px;
-  }
-  .card img,
-  .card1 img,
-  .card2 img{
-    width: 285px;
-    margin-top: 0;
-    border-radius: 17px 17px 0 0;
-  }
-  .img1{
-    height: 352px;
-    object-fit: none;
- }
-  .img2{
+#activite{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+} 
+.card, .card1, .card2{ 
+  box-shadow: 0px 0px 20px #f2f2f2;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.card1, .img2, .img3{
+  margin-top: 0px;
+  margin-bottom: 18px;
+}
+.card h3{
+  margin-left: 15px;
+}
+.card1 h3{
+  margin-top: 0; 
+  margin-left: 15px;
+}
+.card2 h3{
+  margin-left: 15px;
+}
+.card img, .card1 img, .card2 img{
+  width: 285px;
+  margin-top: 0;
+  border-radius: 17px 17px 0 0;
+}
+.img1{
+  height: 352px;
+  object-fit: none;
+}
+.img2{
   height: 158px;
- }
-  .img3{
+}
+.img3{
   height: 117px;
   object-position: top;
   margin-top: 32px;
 }
-  .img4{
+.img4{
   height: 132px;
   object-position: top;
 }
-  .img5{
+.img5{
   height: 155px;
-   object-position: top;
+  object-position: top;
 }
  
 /*Pied de Page*/
@@ -372,31 +367,31 @@ footer{
 /* media queries*/
 
 @media (max-width: 1190px) {
-  aside{
-    width: 100%; 
-  }
-  section{
-    display: flex;
-    flex-direction: column-reverse;
-    }
-    .article{
-      background: white;
-      width: 100%;
-    }
-    #hebergement img{
-      width: 277px;
-    }
-    .card img, .card1 img, .card2 img{
-      width: 417px;
-    }
+aside{
+  width: 100%; 
+}
+section{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.article{
+  background: white;
+  width: 100%;
+}
+#hebergement img{
+  width: 277px;
+}
+.card img, .card1 img, .card2 img{
+  width: 417px;
+}
 }
 
 
 @media  (max-width: 872px){
-  .card img, .card1 img, .card2 img {
-    width: 100%;
-    border: #F2F2F2 2px solid;
-  }
+.card img, .card1 img, .card2 img {
+  width: 100%;
+  border: #F2F2F2 2px solid;
+}
 }
 /*MEDIA MOBILE*/
 @media  (max-width: 840px){
@@ -474,27 +469,16 @@ form .search{
   justify-content: center;
 }
 
-.colonne_marseille,
-.card .img,
-.card1 .img2,
-.card1 .img3,
-.card2 .img4,
-.card2 .img5{ 
+.colonne_marseille, .card .img, .card1 .img2, .card1 .img3, .card2 .img4, .card2 .img5{ 
   width: 100%;
 }
 
-#hebergement img,
-.card-image,
-.card-image img,
-.card .img1{
+#hebergement img, .card-image, .card-image img, .card .img1{
   width: 100%;
-height: 180px;
+  height: 180px;
   
 }
-.card .img1,
-.card1 .img3,
-.card2 .img4,
-.card2 .img5{
+.card .img1, .card1 .img3, .card2 .img4, .card2 .img5{
   height: 248px;
   object-fit: cover;
   border: 2px solid #F2F2F2;
