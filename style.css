@@ -468,7 +468,9 @@ form .search{
   display: flex;
   justify-content: center;
 }
-
+.box-filtre{
+  margin-left: 7px;
+}
 .colonne_marseille, .card .img, .card1 .img2, .card1 .img3, .card2 .img4, .card2 .img5{ 
   width: 100%;
 }
@@ -498,10 +500,8 @@ form .search{
 #hebergement .card-image{
   height: 265px;
   border: 2px solid #F2F2F2;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
+  padding: 0px;
+  
 }
 section h3{
   margin-left: 9px;
